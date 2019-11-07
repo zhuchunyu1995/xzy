@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GOOD</title>
+    <style type="text/css">
+ 
+
+body {
+    margin:0;                                                      /*  清除边距   */
+}
+
+hr {
+    border:none;                                                    /*  清除下划线阴影，设置样式和颜色   */
+    border-bottom:1px solid #ddd;
+}
+
+.nav {
+	position: fixed;                                              /*  头部固定定位，颜色蓝色，宽度100%，优先级99999  */
+	width: 100%;
+	background-color: #5fc0cd;
+	z-index: 99999;
+	}
+.text {
+	font-size: 19px;                                              /*  字体大小19px，颜色白色，居中 */
+	color:#ffffff;
+	text-align: center;
+		}
+.banner {
+            padding-top: 62.8px;                                 /*  因上级固定定位，需要上边距空出它的高度以免被覆盖 */
+            height: 163px;
+            background-image: url('./img/PP.png'); 
+            background-size: cover;                              /*  背景图片铺满 ，相对定位，子绝父相 */
+            position: relative;
+            
+}
+.name,.age,.site {
+            color:#ffffff;                                     /*  给文字绝对定位，颜色白色，上内边距60px */
+            position: absolute;
+            padding-top: 60px;
+        }
+
+.synopsis {                                                       /*  设置synopsis简介区盒子宽度，居中，行高  */
+       margin:0 auto;
+       position: relative; 
+       width:96%;
+    }
+
+.end {
+    background:#fefefe;
+    height: 66px;                                              /*  绝对定位，为页尾设置高和背景颜色 */
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+}
+
+
+.AN {
+    font-size: 17px;                                           /*  为按钮设置字体大小，圆角8px，宽度和高度，边框实线1px，颜色蓝色，固定定位 */
+    border-radius: 8px;                                      
+    width: 46%;
+    height: 56px;
+    bottom: 10px;
+    Border: 1px solid #5fc0cd;
+    position: fixed;
+}
+
+
+</style>
+</head>
+<body>
+<header>                  <!--页头-->
+    <div class="nav">
+    <a href=" https://www.bilibili.com/" style="text-decoration: none;color:#ffffff;position: absolute;font-size: 18px;top: 19px;left: 18px;"><</a>
+	<p class="text">个人主页</p>
+    </div>                         
+</header>                <!--页头结束-->
+
+<div class="banner">    <!--中间模块背景图设置-->
+           <!--中间背景图头像，文字简介，定位图标-->
+    <img src="./img/TT.png" alt="椭圆"style="width: 85px;height: 85px;position: absolute;top: 100px;left: 15px;">    
+    <p class="name" style="font-size: 18px;top: 30px;left: 118px;">高素雅</p>
+    <p class="age" style="font-size: 14px;top: 36px;left: 186px;">51岁</p>
+    <p class="site" style="font-size: 12px;top: 72px;left: 138px;">北京.通州.果园</p>
+    <img src="./img/SS.png" alt="定位图标" style="width: 9px;height: 11.5px;position: absolute;top:146px;left:120px;">
+</div>
+
+<div>       <!--专业技能-->                        
+<p style="border-left: 2px solid #5fc0cd;margin-left:15px;padding-left:10px;margin-top:24px;">专业技能</p>                 
+</div>
+<hr>
+
+<div class="synopsis">         <!--个人简介-->
+<div>
+<span style="color: red;padding-left: 15px;line-height:50px;">☆ </span>
+<span>住家</span>
+<span style="padding-left: 17px;color: red;">☆ </span>
+<span>不含餐</span>
+<hr>
+</div>
+
+
+<div>                             <!--从业年限-->
+<span  style="color: #999999;padding-left: 15px;line-height:50px;">从业年限</span>               
+<span  style="padding-left: 15px;border-left: 1px solid #999999;margin-left:15px;">0~3年</span>
+<hr>
+</div>
+
+
+<div>                         <!--工作时间-->
+<span  style="color: #999999;padding-left: 15px;line-height:50px;">工作时间</span>               
+<span  style="padding-left: 15px;border-left: 1px solid #999999;margin-left:15px;">全天</span>
+<hr>
+</div>
+
+<div>                                <!--服务价格--> 
+    <span  style="color: #999999;padding-left: 15px;line-height:50px;">服务价格</span>
+    <span  style="padding-left: 15px;border-left: 1px solid #999999;margin-left:15px;color: red;">25元/天</span>
+<hr>
+</div>
+
+<div style="position:relative;padding-bottom: 66px;">             <!--自我介绍-->
+<p  style="display: inline-block;color: #999999;text-align:center; width: 90px;position: absolute;top: 50%;margin-top:-51px;">自我介绍</p>                                                      
+<p  style="display: inline-block;border-left:1px #999999 solid;padding-left:20px; width: calc( 100% - 121px); margin-left: 100px; ">可以洗衣做饭，照顾老人。在护工方面有五年经验，经验丰富。</p>
+<hr>
+</div>                  <!--以上为个人简介-->
+
+</div>
+<footer>                <!--页尾，留言和电话联系按钮--> 
+<div class="end">
+    <a href="https://www.baidu.com"><button type="button"  class="AN" type="submit" style="background-color: transparent;left: 2%;color:#5fc0cd;z-index: 9999;">留言</button></a>
+    <a href="https://www.apple.com/cn/?afid=p238%7C9YDjuZgc_mtid_18707vxu38484&cid=aos-cn-kwba-brand-bz"> <button type="button"  class="AN" type="submit" style="background-color: #5fc0cd;color:#ffffff;right: 2%;z-index: 99899;">电话联系</button></a>
+</div>
+</footer>                <!--页尾结束-->
+</body>
+</html>
