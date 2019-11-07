@@ -36,11 +36,15 @@ hr {
             position: relative;
             
 }
-.name,.age,.site {
-            color:#ffffff;                                     /*  给文字绝对定位，颜色白色，上内边距60px */
-            position: absolute;
-            padding-top: 60px;
-        }
+
+
+.PPT {
+    top: 106px;
+    left:15px;
+    position: absolute;
+   
+
+}
 
 .synopsis {                                                       /*  设置synopsis简介区盒子宽度，居中，行高  */
        margin:0 auto;
@@ -73,19 +77,27 @@ hr {
 <body>
 <header>                  <!--页头-->
     <div class="nav">
-    <a href=" https://www.bilibili.com/" style="text-decoration: none;color:#ffffff;position: absolute;font-size: 18px;top: 19px;left: 18px;"><</a>
+    <a href=" https://www.bilibili.com/" style="text-decoration: none;color:#ffffff;font-size: 18px;float: left;line-height: 58px;margin-left: 20px;"><</a>
 	<p class="text">个人主页</p>
     </div>                         
 </header>                <!--页头结束-->
 
 <div class="banner">    <!--中间模块背景图设置-->
-           <!--中间背景图头像，文字简介，定位图标-->
-    <img src="./img/TT.png" alt="椭圆"style="width: 85px;height: 85px;position: absolute;top: 100px;left: 15px;">    
-    <p class="name" style="font-size: 18px;top: 30px;left: 118px;">高素雅</p>
-    <p class="age" style="font-size: 14px;top: 36px;left: 186px;">51岁</p>
-    <p class="site" style="font-size: 12px;top: 72px;left: 138px;">北京.通州.果园</p>
-    <img src="./img/SS.png" alt="定位图标" style="width: 9px;height: 11.5px;position: absolute;top:146px;left:120px;">
+   
+    <div class="PPT">
+    <img src="./img/TT.png" alt="椭圆"style="width: 85px;">    
+
+    <div style="position: absolute;left:100px;top:0;width:100px;color:#ffffff">
+    <p  style="font-size: 18px;margin:0;display: inline-block;">高素雅</p>
+    <p  style="font-size: 14px;display: inline-block;">51岁</p>
+    <img src="./img/SS.png" alt="定位图标" style="width: 9px;display: inline-block;">
+    <p  style="font-size: 12px;margin:0;display: inline-block;">北京.通州.果园</p>
+
 </div>
+</div>
+
+</div>
+
 
 <div>       <!--专业技能-->                        
 <p style="border-left: 2px solid #5fc0cd;margin-left:15px;padding-left:10px;margin-top:24px;">专业技能</p>                 
