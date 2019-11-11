@@ -1,10 +1,10 @@
 body {
-    margin:0 auto;  
-    width: 768px;                                                 /* 清除边距 */
+    margin:0;  
+                                                 /* 清除边距 */
   }
   
   .header {                                        /* 页头 绝对定位 优先级99999 */
-    width: 768px;
+    width: 100%;
     height: 50px;
     background-color: #5fc0cd;
     position: fixed;   
@@ -170,7 +170,7 @@ body {
   
   
   .footer {                                    /* 页尾 固定定位 */
-  width: 768px;
+  width: 100%;
   height: 50px;
   bottom: 0;
   background: #f8fafb;
