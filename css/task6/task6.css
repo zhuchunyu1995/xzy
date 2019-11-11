@@ -1,9 +1,10 @@
 body {
-    margin:0;                                                     /* 清除边距 */
+    margin:0 auto;  
+    width: 768px;                                                 /* 清除边距 */
   }
   
   .header {                                        /* 页头 绝对定位 优先级99999 */
-    width: 100%;
+    width: 768px;
     height: 50px;
     background-color: #5fc0cd;
     position: fixed;   
@@ -57,7 +58,7 @@ body {
       color:#5fc0cd;
   }
   
-  .opt {                                          /* 下拉框父级元素  */
+  .opt {                           /* 下拉框父级元素  */
        padding-top:50px;
        display: flex;
        justify-content:center;
@@ -67,7 +68,6 @@ body {
   
   .opt select {                                    /* 下拉框详细设置 */
       height: 50px;
-      width:33vw;
       border: none;
       outline:none;
       border-right: 1px solid #e1e5e7;
@@ -75,8 +75,15 @@ body {
       color: #999999;
       text-align-last:center;
       border-image: -webkit-linear-gradient(#fff, #e1e5e7,#fff) 1; 
+      flex-grow:1;
   }
   
+
+.box1 {
+    display: flex;
+    width: 33%;
+    
+}
   .synopsis {                                     /* 父级flex盒子 */
   display: flex;
   justify-content:space-between;
@@ -163,7 +170,7 @@ body {
   
   
   .footer {                                    /* 页尾 固定定位 */
-  width: 100%;
+  width: 768px;
   height: 50px;
   bottom: 0;
   background: #f8fafb;
