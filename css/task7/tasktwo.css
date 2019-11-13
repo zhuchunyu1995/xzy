@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    ;
+}
+.box {
+    max-width: 768px;
+    min-width: 320px;
+    margin: 0 auto;
+    background: #29bde0;
+}
+.header {
+    height: 44px;
+    width: 92%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.list {
+    width: 20px;
+    height: 20px;
+}
+.text {
+    font-size: 17px;
+    color: #ffffff;
+}
+.block1 {
+    height: 41px;
+    background: #b9e9f5;
+    display: flex;
+    align-items: center;
+}
+.text2 {
+    font-size: 13px;
+    display: inline-block;
+    padding-left: 24px;
+}
+.triangle {
+ width: 0; 
+ height: 0;
+ margin-left: 34px;
+ margin-bottom: -7px;
+ border-width: 8px 4px;
+ border-style: solid;
+ border-color:#b9e9f5 transparent transparent transparent;
+}
+.text3 {
+    font-size: 12px;
+    color: #f5fbfd;
+    padding-left: 32px;
+    
+}
+.square {
+  width: 86%;
+  margin: 0 auto;
+  margin-top: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+ 
+.tx {
+    width: 63px;
+    height: 63px;
+    background: #ffffff;
+    border: 3px solid #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+.tx1 {
+    width: 63px;
+    height: 49.5px;
+    background: #f5c97b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tx2 {
+    width: 63px;
+    height: 13.5px;
+    background: #83b09a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text4 {
+    font-size: 15px;
+}
+
+.text5 {
+    font-size: 11.3px;
+    color: #ffffff;
+}
+
+.combination {
+    width: 66px;
+    height: 15px;
+    margin-top: 15px;
+    margin-left: -2px;
+    display: none;
+}
+
+
+
+.tx:hover .combination {
+    display: block;
+}
+
+
+
+
+
+.square1 {
+    
+  width: 86%;
+  margin: 0 auto;
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.footer {
+    max-width: 768px;
+    min-width: 320px;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    position: fixed;
+    z-index: 99999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #29bde0;
+}
+
+.button {
+    background-color: transparent;
+    color:#ffffff;
+    font-size: 17px;                                          
+    width: 245px;
+    height: 43.5px;
+    
+    background: #fbb435;
+    position: fixed;
+    z-index: 99999;
+    border: 0;
+    
+}
+
