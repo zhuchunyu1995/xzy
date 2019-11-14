@@ -6,6 +6,7 @@ body {
 }
 .box {
     background: #29bde0;
+    height: 100vh;
 }
 .header {
     display: flex;
@@ -32,7 +33,28 @@ body {
     background: #b9e9f5;  
     display: flex;
     align-items: center;
+    position: relative;
 }
+
+
+.play {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+    z-index: 99999;
+    pointer-events:none;
+   
+}
+
+.MP3 {
+    width: 30px;
+    height: 30px; 
+    position: absolute;
+    right: 15px;
+}
+
+
 .text {
     font-size: 17px;
     display: inline-block;
@@ -49,65 +71,93 @@ body {
     border-color:#b9e9f5 transparent transparent transparent;
 }
 .text1 {
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff;
     margin-left: 34px;
     margin-top: 8px;
     margin-bottom: 30px;
 }
 .choice {
-max-width: 768px;
-min-width: 320px;
-width: 100%;
-height: 100vmin;
-margin-top: -5%;
-margin-left: 2%;
-padding-bottom: 40%;
+    position: relative;
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
 }
 
-.block1 {
-    width: 21%;
-    height: 21%;
-    float: left;
-    background: darkblue;
-    margin: 5%;
+.choice1 {
+    position: relative;
+    width: 92%;
+    top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.choice2 {
+    position: relative;
+    width: 92%;
+    top: 88px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.choice3 {
+    position: relative;
+    width: 92%;
+    bottom: -132px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 103px;
+}
+
+
+.block {
+    width: 84px;
+    height: 84px;
     border: 3px solid #ffffff;
 }
-.fk {
-    width: 100%;
-    height: 70%;
+.one {
+    width: 84px;
+    height: 64px;
     background: #f5c97b;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.fk span {
+
+.one span {
     font-size: 15px;
     color: #565656;
 }
-
-.fk1 {
-    width: 100%;
-    height: 30%;
+.two {
+    width: 84px;
+    height: 20px;
     background: #83b09a;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-.fk1 span {
-    font-size: 11.3px;
-    color: #ffffff;
+.two span{
+    font-size: 12px;
+    color: #e0ebe6;
 }
 .combination {
-    width: 100%;
-    margin-top: 10%;
+    position: absolute;
+    width: 85.5px;
+    top: 100px;
     display: none;
 }
 
-.block1:hover .combination {
-    display: block;
-}
+
+
+
+
 
 
 .footer {
