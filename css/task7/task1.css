@@ -1,0 +1,150 @@
+body {
+    margin: 0 auto;
+    max-width: 768px;
+    min-width: 320px;
+}
+.box {
+    background: #f0f0f0;
+}
+.header {
+    height: 55px;
+    background: #29bde0;
+    display: flex;
+    align-items: center;
+}
+.button {
+    width: 38px;
+    margin-left: 10px;
+}
+
+.menu {
+    transition: 0.3s;
+    cursor: pointer;                
+  }
+  
+  .bar {
+    height: 3px;
+    width: 27px;
+    margin: 5px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+  
+  .button .menu:hover .bar:nth-of-type(1) {
+   
+    transform: translateY(11px) rotate(40deg);
+  }
+  .button .menu:hover .bar:nth-of-type(2) {
+    opacity: 0;
+  }
+  .button .menu:hover .bar:nth-of-type(3) {
+   
+    transform: translateY(-5px) rotate(-40deg);
+  }
+
+  .last {
+    width: 94%;
+    height: 70px;
+    background: #ffffff;
+    margin: 0 auto;
+    border: 1px solid #c9c9c9;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  .last:hover {
+      background: teal;
+  }
+  
+.last span {
+    font-size: 19px;
+    color: #9a9a9a;
+}
+.click {
+    position: absolute;
+    right: 10px;
+    width: 24.8px;
+    height: 24.8px;
+}
+.box1 {
+    width: 94%;
+    background: #ffffff;
+    margin: 0 auto;
+    border: 1px solid #c9c9c9;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.box1 p {
+    font-size: 15px;
+    color: #787878;
+}
+
+.text {
+    height: 60px;
+    border-bottom: 2px solid #fbb435;  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text:hover {
+    background: red;
+}
+
+.text  span {
+    font-size: 20px;
+    color: #fbb435;
+}
+.block1{
+    height: 130px;
+    width: 86%;
+    background: #69d1e9;
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block1:hover {
+    background: salmon;
+}
+.text1 {
+    font-size: 20px;
+    color: #ffffff;
+}
+.block2{
+    height: 130px;
+    width: 86%;
+    background: #69d1e9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.block2:hover {
+    background: indigo;
+}
+.arrow {
+    position: absolute;
+    right: -21px;
+    width: 15px;
+    height: 40px;
+}
+.spot {
+    display: flex;
+    margin-left: 12px; 
+    margin-top: -12px;
+}
+li {
+    font-size: 20px;
+    margin: -7px;
+    color: #f0f0f0;
+}
+li:hover {
+   color: #69d1e9; 
+}
