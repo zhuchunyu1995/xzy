@@ -83,6 +83,7 @@ a {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
 .box1 p {
     font-size: 15px;
@@ -134,12 +135,7 @@ a {
 .block2:hover {
     background: indigo;
 }
-.arrow {
-    position: absolute;
-    right: -21px;
-    width: 15px;
-    height: 40px;
-}
+
 .spot {
     display: flex;
     margin-left: 12px; 
@@ -152,4 +148,20 @@ li {
 }
 li:hover {
    color: #69d1e9; 
+}
+
+.triangle {
+    width: 0; 
+    height: 0;
+    border-width: 27px;
+    border-style: solid;
+    border-color:  transparent transparent transparent  #fbb435;
+    position: absolute;
+    right: -16px;
+    bottom: 268px;
+}
+
+.triangle:hover {
+    border: #29bde0;
+  
 }
