@@ -1,34 +1,35 @@
+body {                                           /* 清楚边距 设置最大最小宽度 */
+    margin: 0 auto; 
+    max-width: 768px;    
+    min-width: 320px;   
+}
 
-body {
-    max-width: 768px;
-    min-width: 320px;
-    margin: 0 auto;
+.setting {                                      /* 设置背景颜色 */
+    background: #29bde0;           
 }
-.box {
-    background: #29bde0;
-    height: 100vh;
-}
-.header {
+
+.header {                                        /* 设置页头 */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 60px;
 }
-.top {
+.header1 {                                      /* 在页头设置个宽度96%的盒子 */
     width: 96%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo {
-    width: 25px;
-    height: 25px;
-}
-.vote {
+.vote {                                         /* 设置字体颜色和大小 */
     font-size: 20px;
     color: #ffffff;
 }
-.remind {
+.logo {                                        /* 设置页头左右两侧图标大小 */
+    width: 25px;                      
+    height: 25px;
+}
+ 
+.remind {                                      /* 设置语音框的高度/相对定位/弹性盒子水平垂直居中 */
     height: 50px;
     background: #b9e9f5;  
     display: flex;
@@ -37,7 +38,7 @@ body {
 }
 
 
-.play {
+.play {                                       /* 设置播放器logo大小和位置/绝对定位 */
     width: 30px;
     height: 30px;
     position: absolute;
@@ -47,20 +48,20 @@ body {
    
 }
 
-.MP3 {
+.MP3 {                                       /* 设置播放器大小和位置/绝对定位 */
     width: 30px;
+    width: 30px;
+    border-radius: 50%;
     height: 30px; 
     position: absolute;
     right: 15px;
+   
 }
-
-
-.text {
+.text {                                      /* 设置语音框字体大小和位置 */
     font-size: 17px;
-    display: inline-block;
     padding-left: 24px;
 }
-.triangle {
+.triangle {                                           /* 三角形 */
     width: 0; 
     height: 0;
     margin-left: 34px;
@@ -69,95 +70,73 @@ body {
     border-width: 10px 7px;
     border-style: solid;
     border-color:#b9e9f5 transparent transparent transparent;
+    position: absolute;
+    top: 51px;
 }
 .text1 {
-    font-size: 15px;
+    font-size: 14px;
     color: #ffffff;
-    margin-left: 34px;
-    margin-top: 8px;
-    margin-bottom: 30px;
-}
-.choice {
-    position: relative;
-    width: 92%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+    padding-left: 36px;
 }
 
-.choice1 {
-    position: relative;
-    width: 92%;
-    top: 45px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-}
-.choice2 {
-    position: relative;
-    width: 92%;
-    top: 88px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
+.game {
+display: flex;
+flex-wrap: wrap;
+padding-bottom: 60px;
+
 }
 
-.choice3 {
-    position: relative;
-    width: 92%;
-    bottom: -132px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 auto;
-    padding-bottom: 55px;
+.space {
+    flex-basis: 33.33%;
 }
-
 
 .block {
+    margin: 0 auto;
     width: 84px;
-    height: 84px;
-    border: 3px solid #ffffff;
+   
 }
+
 .one {
-    width: 84px;
     height: 64px;
     background: #f5c97b;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .one span {
     font-size: 15px;
     color: #565656;
 }
 .two {
-    width: 84px;
     height: 20px;
     background: #83b09a;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.two span{
+.two span {
     font-size: 12px;
     color: #e0ebe6;
 }
-.combination {
-    position: absolute;
-    width: 85.5px;
-    top: 100px;
-    display: none;
+
+.block1 {
+    width: 80px;
+    height: 19px;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
+.combination {
+    width: 84px;
+    height: 19px;
+    display: none;
+   
+}
 
 .block:hover .combination {
     display: block;
 }
+
 .between {
     display: flex;
     justify-content: center;
@@ -189,3 +168,4 @@ body {
     border: 0;
     
 }
+
