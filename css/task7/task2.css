@@ -49,13 +49,14 @@ body {                                           /* 清楚边距 设置最大最
 }
 
 .MP3 {                                       /* 设置播放器大小和位置/绝对定位 */
-    width: 29px;
+    width: 90px;
     border-radius: 50%;
-    height: 29px; 
+    height: 28px; 
     position: absolute;
-    right: 15px;
+    right: 4px;
     background-color:#b9e9f5;
-    opacity:0.1;
+    opacity:0;
+    transform:rotate(179deg);
    
 }
 .text {                                      /* 设置语音框字体大小和位置 */
@@ -174,3 +175,5 @@ padding-bottom: 60px;
 .frame {
     border: 2px solid #ffffff;
 }
+
+
