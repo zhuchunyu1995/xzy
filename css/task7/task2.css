@@ -49,10 +49,9 @@ body {                                           /* 清楚边距 设置最大最
 }
 
 .MP3 {                                       /* 设置播放器大小和位置/绝对定位 */
-    width: 30px;
-    width: 30px;
+    width: 10px;
     border-radius: 50%;
-    height: 30px; 
+    height: 10px; 
     position: absolute;
     right: 15px;
    
