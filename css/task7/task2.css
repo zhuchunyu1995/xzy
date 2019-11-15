@@ -54,7 +54,8 @@ body {                                           /* 清楚边距 设置最大最
     height: 29px; 
     position: absolute;
     right: 15px;
-    background-color: rgb(253, 246, 246); 
+    background-color:#b9e9f5;
+    opacity:0.1;
    
 }
 .text {                                      /* 设置语音框字体大小和位置 */
