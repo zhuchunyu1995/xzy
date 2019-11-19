@@ -1,0 +1,290 @@
+.container-fluid {                                       /* 大盒子 */
+    background: #fafafa;
+    padding: 0;
+}
+
+.bg-light  {                                           /* 导航栏颜色 */
+    background-color: #29b078 !important;
+    justify-content: flex-end;
+    align-items: center;
+}
+.header {                                               /* 页眉宽高 */
+    width: 78%;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.header span {                                        /* 页眉客服电话字体大小和颜色 */
+    font-size: 13px;
+    color: #29b078;
+}
+
+.logo {                                                /* 页眉logo大小 */
+    width: 90px;
+    height: 17.6px;
+}
+
+.navbar-expand-lg .navbar-nav {                         /* 导航栏位置调整 */
+    padding-left: 71%;
+  
+}
+.navbar-toggler {                                      /* 导航栏缩小后图标位置在水平轴终点 */
+    justify-content: flex-end;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #ffffff;
+    width: 72px;  
+}                                                       /* 导航栏字体颜色和宽度 */
+
+
+
+.s1  {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
+
+.box {
+   display: flex;
+   flex-direction: column;
+   text-align-last: center;
+   align-items: center;
+   text-align:justify;
+}
+.box p {
+    font-size: 13px;
+    color: #999999;
+
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 77%;
+    margin-top: 5%;
+    margin: 0 auto;
+}
+h4 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 17px; 
+}
+
+
+.line {
+    height: 200px;
+}
+.ppt {
+    
+    flex-direction: column;
+   
+    padding-left: 40px;
+}
+.ppt p {
+    font-size: 13px;
+    color: #999999;
+}
+.ppt span {
+    color: #29b078;
+}
+
+.circular {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #999999;
+}
+.b1 {
+    margin-right: 20px;
+}
+
+.k1 {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.k1 span {
+    font-size: 13px;
+    color: #afafaf;
+}
+.k2 {
+    display: flex;
+    align-items: center; 
+    margin-left: 20px;
+}
+.k2 span {
+    font-size: 13px;
+    color: #a8a8a8;
+}
+.s2 {
+    padding: 0;
+}
+
+.f1 {
+    margin-right: 10px;
+    padding: 0
+}
+
+.arrow {
+    margin-left: 20px;
+}
+
+.block {
+    width: 260px;
+    height: 373px;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+.block1 {
+    display: flex;
+    justify-content: center;
+}
+.text1 {
+    display: flex;
+    justify-content: center;
+}
+.text2{
+    display: flex;
+    justify-content: center;
+    text-align:justify;
+}
+.text2 {
+    color: #999999;
+    width: 78%;
+    margin: 0 auto;
+}
+
+.s3 {
+    padding: 0;
+}
+
+.spot {
+    display: flex;
+    font-size: 30px;
+    margin: 0 auto;
+   
+}
+.spot li { 
+    color: #ffffff;
+}
+.block2 {
+    width: 241px;
+    height: 176px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.s4 {
+    padding: 0;
+}
+
+ul {
+    padding-left: 16px;
+}
+
+ul li {
+    color: #999999;
+    margin-top: 10px;
+}
+
+
+
+.pp li {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+
+
+
+
+
+    
+    @media (min-width: 576px) {
+    
+        .col-1-5 {
+        
+        width: 20%;
+        
+        
+        }
+        
+        }
+        
+        @media (min-width: 992px) {
+        
+        .col-md-1-5 {
+        
+        width: 20%;
+        
+        
+        }
+        
+        }
+        
+        @media (min-width: 1200px) {
+        
+        .col-lg-1-5 {
+        
+        width: 20%;
+        
+        }
+        
+        }
+
+
+
+
+
+
+
+
+
+        @media (min-width: 576px) {
+    
+            .col-1-10 {
+            
+            width: 10%;
+            
+            
+            }
+            
+            }
+            
+            @media (min-width: 992px) {
+            
+            .col-md-1-10 {
+            
+            width: 10%;
+            
+            
+            }
+            
+            }
+            
+            @media (min-width: 1200px) {
+            
+            .col-lg-1-10 {
+            
+            width: 10%;
+            
+            }
+            
+            }
