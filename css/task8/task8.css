@@ -9,21 +9,21 @@
     align-items: center;
 }
 .header {                                               /* 页眉宽高 */
-    width: 78%;
-    height: 24px;
+    width: 76%;
+    height: 39px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
 .header span {                                        /* 页眉客服电话字体大小和颜色 */
-    font-size: 13px;
+    font-size: 14px;
     color: #29b078;
 }
 
 .logo {                                                /* 页眉logo大小 */
     width: 90px;
-    height: 17.6px;
+    height: 20px;
 }
 
 .navbar-expand-lg .navbar-nav {                         /* 导航栏位置调整 */
