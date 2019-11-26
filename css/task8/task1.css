@@ -1,6 +1,6 @@
 .icon {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 47px;
 }
 
    .lj:hover {
@@ -126,7 +126,16 @@
     text-align: center;
 
 }
+@media (max-width: 992px) {
 
+    .navbar-light .navbar-nav .active>.nav-link,
+    .navbar-light .navbar-nav .nav-link.active,
+    .navbar-light .navbar-nav .nav-link.show,
+    .navbar-light .navbar-nav .show>.nav-link {
+        font-size: 16px;
+    }
+
+}
 
 .dhl1 {
     width: 96%;
@@ -197,9 +206,6 @@
 
 }
 
-
-/* 导航栏字体颜色和宽度 */
-
 .carousel-indicators li {
     width: 10px;
     height: 10px;
@@ -235,14 +241,8 @@
 
 
 .bos {
-    bottom: -23px;
+    bottom: -26px;
 }
-
-
-
-
-
-
 
 
 .carousel-indicators1 {
@@ -290,6 +290,8 @@
 .text3 {
     display: flex;
     justify-content: center;
+    margin-top: 8%;
+    margin-bottom: 2%;
 }
 
 .texts {
@@ -338,6 +340,66 @@ h5 {
 }
 
 
+@media (min-width: 1200px) {
+
+    .number {
+
+        padding-right: 10px;
+
+    }
+
+}
+@media (min-width: 1400px) {
+
+    .f1 span {
+
+        margin-left: 0;
+
+    }
+
+}
+
+@media (min-width: 320px) {
+
+    .old {
+
+        margin-top: 5px;
+
+    }
+
+}
+
+
+
+@media (min-width: 576px) {
+
+    .pq {
+
+        margin-top: -7px;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .pq {
+
+        margin-top: -17px;
+
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .pq {
+
+        margin-top: -1px;
+
+    }
+
+}
 
 
 
@@ -346,7 +408,6 @@ h5 {
     /*  数字1和5  */
     padding: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -354,7 +415,6 @@ h5 {
 .ss {
     padding: 0;         /*  数字3和4，7和8  */
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -362,7 +422,6 @@ h5 {
     /*  数字2和6  */
     padding: 0;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -371,6 +430,7 @@ h5 {
 }
 .f1 span {
     color: #999999;
+    font-size: 12px;
 }
 @media (max-width: 576px) {
 
@@ -414,6 +474,57 @@ h5 {
 }
 
 
+@media (min-width: 1400px) {
+
+    .nn {
+
+        margin-left: -17px;
+
+    }
+}
+
+
+
+@media (min-width: 320px) {
+
+    .number {
+
+        padding-right: 10px;
+
+    }
+
+}
+@media (min-width: 576px) {
+
+    .number {
+
+        padding-right: 10px;
+
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .number {
+
+        padding-right: 10px;
+
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .number {
+
+        padding-right: 10px;
+
+    }
+
+}
+
+
 
 
 
@@ -428,6 +539,16 @@ h5 {
 
 }
 
+
+@media (min-width: 576px) {
+
+    .ss {
+
+        padding-left: 50px;
+
+    }
+
+}
 
 
 
@@ -473,20 +594,17 @@ h5 {
 }
 
 
-.f1 {
-    /*  第二列第三列文字的宽度  */
-    width: 55%;
-    padding: 0
-}
-
 .arrow {
     /*  箭头的右外边距  */
     margin-right: 12px;
 }
 
 
-
-
+@media (min-width:992px) {
+    .f1 {
+        width: 55%;
+    }
+}
 
 .block {
     height: 370px;
@@ -601,7 +719,7 @@ ul li {
 }
 
 .jns2 {
-    padding-bottom: 39px;
+    padding-bottom: 35.5px;
     margin-top: 30px;
 }
 
@@ -612,8 +730,6 @@ width: 190px;
 justify-content: space-between;
 align-items: center;
 position: relative;
-
-
 }
 
 .bo1 p {
@@ -621,9 +737,26 @@ position: relative;
         color: #ffffff; 
 }
 
-.po {
-  width: 75.28px;
-  height: 19.2px;
+@media (max-width: 567px) {
+   
+
+    .bo1 {
+        width: 160px;
+     
+
+    }
+
+}
+
+@media (min-width: 320px) {
+   
+
+    .bo1 p {
+    line-height: 23.5px;
+     
+
+    }
+
 }
 
 
@@ -632,7 +765,7 @@ position: relative;
 .end {
     display: flex;
     flex-direction: column;
-    margin-top: 30px; 
+    margin-top: 35px; 
     position: absolute;
     right: 24px;
 }
@@ -655,17 +788,17 @@ position: relative;
    
 }
 
-
-@media (min-width: 320px) {
+@media (max-width: 576px) {
    
 
     .end1 {
-  padding-left: 19.5%;
+  display: none;
      
 
     }
 
 }
+
 @media (min-width: 576px) {
    
 
@@ -680,7 +813,7 @@ position: relative;
    
 
     .end1 {
-  padding-left: 28.5%;
+  padding-left: 38%;
      
 
     }
@@ -693,7 +826,7 @@ position: relative;
    
 
     .end1 {
-  padding-left: 34.5%;
+  padding-left: 33%;
      
 
     }
@@ -705,7 +838,7 @@ position: relative;
    
 
     .end1 {
-  padding-left: 36%;
+  padding-left: 34%;
      
 
     }
@@ -715,7 +848,7 @@ position: relative;
    
 
     .end1 {
-  padding-left: 37%;
+  padding-left: 34%;
      
 
     }
@@ -745,10 +878,18 @@ position: relative;
 }
 
 
+@media (max-width: 567px) {
+
+    .bo1 {
+        margin-top: 30px;
+        margin-left: 0;
+   
+    }
+
+}
 
 
-
-@media (max-width: 768px) {
+@media (min-width: 567px) {
 
     .bo1 {
         margin-top: 30px;
@@ -790,7 +931,15 @@ position: relative;
 
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
+
+    .jns2 {
+
+  padding-bottom: 45px;
+    }
+
+}
+@media (min-width: 567px) {
 
     .jns2 {
 
@@ -817,37 +966,56 @@ position: relative;
     .jns {
 
         width: 40%;
-    }
-
-}
-@media (max-width: 768px) {
-   
-
-    .po {
-         height: 28px;
-      
-
-    }
-
+    }  
 }
 
-
-@media (max-width: 768px) {
+@media (max-width: 567px) {
    
 
     .end {
-         top: 16px;
-         right: -32px;
+         bottom: 16px;
+         right: 0px;
       
 
     }
 
 }
 
+@media (min-width: 567px) {
+   
+
+    .end {
+         top: -12px;
+         right: 0px;
+      
+
+    }
+
+}
+
+@media (min-width: 768px) {
+   
+
+    .end {
+         top: 0px;
+         right: 0px;
+      
+
+    }
+
+}
+
+@media (min-width: 320px) {
+
+    .jns {
+
+        width: 100%;
+    }
+
+}
 
 
-
-@media (max-width: 768px) {
+@media (min-width: 567px) {
 
     .jns {
 
@@ -857,14 +1025,7 @@ position: relative;
 }
 
 
-@media (max-width: 768px) {
 
-    p {
-
-        line-height: 28px;
-    }
-
-}
 
 @media (max-width: 768px) {
 
@@ -899,69 +1060,6 @@ position: relative;
     }
 
 }
-
-
-
-
-
-
-
-
-
-@media (max-width: 576px) {
-    /*  设置缩小后的距离  */
-
-    .f1 {
-
-       width: 80%;
-
-
-    }
-
-}
-
-
-@media (min-width: 576px) {
-    /*  设置缩小后的距离  */
-
-    .f1 {
-
-       width: 80%;
-
-
-    }
-
-}
-
-@media (min-width: 769px) {
-    /*  设置缩小后的距离  */
-
-    .f1 {
-
-       width: 78%;
-
-
-    }
-
-}
-
-@media (min-width: 992px) {
-    /*  设置缩小后的距离  */
-
-    .f1 {
-
-       width: 55%;
-
-
-    }
-
-}
-
-
-
-
-
-
 
 
 
@@ -1094,11 +1192,6 @@ position: relative;
     }
 
 }
-
-
-
-
-
 
 
 
@@ -1392,13 +1485,6 @@ position: relative;
             }
 
         }
-
-
-
-
-
-
-        
 
 
 
