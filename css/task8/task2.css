@@ -20,7 +20,7 @@
 @media (max-width: 992px) {
 
     .header {
-        width: 96%;
+        width: 92%;
         margin: 0 auto;
     }
 
@@ -94,6 +94,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     
 }
 
@@ -147,16 +148,6 @@
 
 }
 
-@media (max-width: 992px) {
-
-    .bg-light {
-        padding-left: 0;
-        padding-right: 0;
-        
-        
-    }
-
-}
 
 
 .row {
@@ -167,6 +158,58 @@
 
 .banner {
     width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+
+    .banner {
+      height: 17vh;
+      object-fit: cover;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .to {
+      width: 70px;
+      height: 36px;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar-light .navbar-toggler-icon {
+      width: 20px;
+      height: 20px;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .navbar-light .navbar-toggler {
+      width: 36px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+        
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .bg-light {
+      padding: 0.5rem;
+        
+    }
+
 }
 
 
@@ -188,23 +231,41 @@
     padding-right: 0; 
     padding-left: 0;
     height: 90%;
+
+   
 }
 
 .lb1 {
     display: flex;
     align-items: center;
     flex-direction: column;
+
 }
+
 
 @media (max-width: 576px) {
 
     .lb1 {
        overflow: auto;
        height: 280px;
-       
-    }
 
+    }
 }
+
+
+@media (max-width: 576px) {
+
+    .lb1::-webkit-scrollbar {
+       display: none;
+
+    }
+}
+
+
+
+
+
+
 
 .lb1 span {
     color: #29b078;
