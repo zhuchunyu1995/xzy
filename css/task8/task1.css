@@ -169,6 +169,9 @@
 
 }
 
+.navbar-light .navbar-toggler {
+    color: chartreuse;
+}
 
 
 
@@ -243,8 +246,31 @@
 .bos {
     bottom: -26px;
 }
+@media (min-width:992px){
+    .tzx {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width:1200px){
+    .tzx {
+        margin-bottom: 35px;
+    }
+}
 
 
+
+@media (min-width:992px){
+    .kda {
+        margin-bottom: -5px;
+    }
+}
+
+@media (min-width:1200px){
+    .kda {
+        margin-bottom: 16px;
+    }
+}
 .carousel-indicators1 {
     list-style: none;
     display: flex;
@@ -519,6 +545,7 @@ h5 {
     .number {
 
         padding-right: 10px;
+        margin-left: 10px;
 
     }
 
@@ -596,7 +623,7 @@ h5 {
 
 .arrow {
     /*  箭头的右外边距  */
-    margin-right: 12px;
+    margin-left: 10px;
 }
 
 

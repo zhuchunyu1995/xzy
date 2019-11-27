@@ -42,6 +42,10 @@
     height: 21px;
 }
 
+.navbar-light .navbar-toggler {
+    color: chartreuse;
+}
+
 
 
 .bg-light {
@@ -330,8 +334,11 @@
 }
 
 .list td {
-    padding: 10px;
+    padding: 7px;
 }
+
+
+
 @media (max-width: 768px) {
   
 
