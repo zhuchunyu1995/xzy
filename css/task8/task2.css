@@ -284,6 +284,17 @@
     cursor:pointer;
 }
 
+@media (max-width: 576px) {
+
+    .elect {
+        width: 84px;
+       
+    }
+
+}
+
+
+
 .select:active  .circle {
     background: #f9a372;
 }
