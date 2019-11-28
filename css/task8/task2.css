@@ -141,9 +141,6 @@
 
     .dhl {
         width: 100%;
-        
-        
-        
     }
 
 }
@@ -295,7 +292,7 @@
 
 
 
-.select:active  .circle {
+.select:active .circle {
     background: #f9a372;
 }
 .select:active .wz {
