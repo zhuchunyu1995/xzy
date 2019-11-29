@@ -270,6 +270,17 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+@media screen and (min-width:320px) and (max-width:670.97px) {
+    .ls {
+        padding-bottom: 20px;
+    }
+}
+@media screen and (min-width:670.98px) and (max-width:766.97px) {
+    .ls {
+        padding-bottom: 20px;
+    }
+}
+
 .rs {
     display: flex;
     flex-wrap: wrap;
@@ -291,8 +302,6 @@ body {
         width: 51%;
     }
     }
-
-
 
 
 .xz {
@@ -356,7 +365,19 @@ label:after {
     margin-right: 20px;
     display: flex;
     flex-wrap: wrap;
-  
+}
+
+
+@media screen and (min-width:320px) and (max-width:670.97px) {
+    .hh {
+        top: 17px;
+    }
+}
+
+@media screen and (min-width:670.98px) and (max-width:766.97px) {
+    .hh {
+        top: 39px;
+    }
 }
 
  .form select {
@@ -392,7 +413,7 @@ select::-ms-expand { display: none; }
     flex-wrap: wrap;
 }
 
-@media screen and (min-width:320.98px) and (max-width:669.97px) {
+@media screen and (min-width:320.98px) and (max-width:671.97px) {
     .lo {
         width: 100%; 
     }
@@ -403,7 +424,7 @@ select::-ms-expand { display: none; }
     }
 }
 
-@media screen and (min-width:320.98px) and (max-width:669.98px) {
+@media screen and (min-width:320.98px) and (max-width:670.98px) {
     .ap {
         line-height: 35px;
     }
