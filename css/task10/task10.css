@@ -689,6 +689,7 @@ select::-ms-expand { display: none; }
 .tel {
     display: flex;
 }
+
 .qq {
     display: flex;
     flex-direction: column;
@@ -709,6 +710,8 @@ select::-ms-expand { display: none; }
     color: #fff;
     line-height: 31px;
     margin: 0 auto;
+    padding: 0 10px;
+    word-break:break-all;
 }
 @media screen and (min-width: 320.98px) and (max-width:767.98px) {
     .over span {
