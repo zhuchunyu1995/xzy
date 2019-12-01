@@ -29,43 +29,62 @@ body {
   padding-right: 34.26px;
 }
 
-.background {
-  padding-top: 60px;
-  background-image: url("./img/background.png");
-  background-size: cover;
+.box {
+  display: flex;
+  align-items: center;
   position: relative;
+}
+
+.box .background {
+  padding-top: 59px;
+  position: relative;
+  background-size: cover;
   object-fit: cover;
-  height: 163px;
+  width: 100%;
 }
 
-.background > .picture {
+.box > .block {
   position: absolute;
-  width: 100px;
-  top: 50%;
+  margin-top: 29px;
   left: 30px;
-  margin-top: -20px;
+  width: 64%;
+  display: flex;
+  align-items: center;
 }
 
-.background > .name {
-  width: 100px;
+.box .picture {
+  width: 40%;
+}
+
+.box .picture img {
+  width: 100%;
+}
+
+.box span + span {
+  font-size: 18px;
+}
+
+.block-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 20px;
+  font-size: 20px;
+  color: #fff;
+  height: 11vmin;
+}
+
+.block-1 > .name {
+  width: 115px;
   display: flex;
   justify-content: space-between;
-  color: #fff;
-  position: absolute;
-  top: 109px;
-  left: 150px;
-  font-size: 17px;
 }
 
-.background > .location {
-  font-size: 13px;
-  color: #fff;
-  position: absolute;
-  top: 150px;
-  left: 150px;
+.block-1 .location {
+  font-size: 15px;
 }
 
-.background > .location img {
+.block-1 .location img {
   width: 10px;
 }
 
