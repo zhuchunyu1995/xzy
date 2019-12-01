@@ -71,6 +71,7 @@ body {
   display: flex;
   padding-top: 64px;
   width: 100%;
+  border-bottom: 1px solid #e1e5e7;
 }
 
 .spinner > .spinner1 {
