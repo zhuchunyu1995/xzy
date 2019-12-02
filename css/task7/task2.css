@@ -44,8 +44,7 @@ body {                                           /* 清楚边距 设置最大最
     position: absolute;
     right: 15px;
     z-index: 99999;
-    pointer-events:none;
-   
+    pointer-events:none;  
 }
 
 .MP3 {                                       /* 设置播放器大小和位置/绝对定位 */
@@ -95,8 +94,6 @@ padding-bottom: 60px;
 .block {
     margin: 0 auto;
     width: 88px;
-    
-   
 }
 
 .one {

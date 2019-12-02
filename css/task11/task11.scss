@@ -9,7 +9,8 @@ body {
     height: 100vh;
 }
 .header {
-    background: #5fc0cd;
+    background-color: #1999dd;
+    background-image: linear-gradient(#199ce2, #1ba3ec,#1999dd);
     span {
         color: #fff;
         size: 15px;
@@ -57,19 +58,15 @@ body {
     height: 22px;
 }
 .enter {
-    background: #5fc0cd;
+    background-color: #1999dd;
+    background-image: linear-gradient(#199ce2, #1ba3ec,#1999dd);
     margin-top: 34px;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    .but {
-        border: 0;
-        background: #5fc0cd;
-        color: #fff;
-        font-size: 18px;
-        outline: none;
-    }
+    font-size: 18px;
+
 }
 .hint {
     color: #5fc0cd;
@@ -81,4 +78,5 @@ body {
 
 a {
     text-decoration: none;
+    color: #fff;
 }

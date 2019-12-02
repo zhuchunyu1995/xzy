@@ -11,7 +11,8 @@ body {
 }
 
 .header {
-  background: #5fc0cd;
+  background-color: #1999dd;
+  background-image: linear-gradient(#199ce2, #1ba3ec, #1999dd);
 }
 
 .header span {
@@ -64,20 +65,14 @@ body {
 }
 
 .enter {
-  background: #5fc0cd;
+  background-color: #1999dd;
+  background-image: linear-gradient(#199ce2, #1ba3ec, #1999dd);
   margin-top: 34px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.enter .but {
-  border: 0;
-  background: #5fc0cd;
-  color: #fff;
   font-size: 18px;
-  outline: none;
 }
 
 .hint {
@@ -90,4 +85,5 @@ body {
 
 a {
   text-decoration: none;
+  color: #fff;
 }

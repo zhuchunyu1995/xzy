@@ -262,16 +262,6 @@
 }
 
 
-.pg {
-    background: black;
-    opacity: 0.8;
-    color: #fff;
-    word-break:break-all;
-    text-indent:9px;
-    justify-content: center;
-    align-items: center;
-}
-
 .zt {
     font-size: 15px;
     display: inline-block;
@@ -286,7 +276,15 @@
     font-size: 15px;
 }
 
-
+.pg {
+    background: black;
+    opacity: 0.8;
+    color: #fff;
+    word-break:break-all;
+    text-indent:9px;
+    justify-content: center;
+    align-items: center;
+}
 
 .pg {
     width: 100%;
