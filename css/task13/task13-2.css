@@ -41,6 +41,7 @@ body {
   color: #ffc865;
   font-size: 24px;
   text-align: center;
+  text-align-last: left;
 }
 
 .result-1 {
