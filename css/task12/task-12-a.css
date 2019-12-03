@@ -108,6 +108,7 @@ body {
   margin: 0 auto;
   line-height: 70px;
   font-size: 20px;
+  padding-bottom: 90px;
 }
 
 .content-1 {
@@ -213,4 +214,8 @@ body {
   margin-left: 2%;
   font-size: 20px;
   outline: none;
+}
+
+.hg {
+  line-height: 40px;
 }

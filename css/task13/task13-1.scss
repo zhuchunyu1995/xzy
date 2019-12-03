@@ -36,13 +36,13 @@ $block-bottom: #83b09a;
    font-size: 17px;
    position: relative;
    >.MP3 {                                       /* 设置播放器大小和位置/绝对定位 */
-    width: 90px;
-    height: 28px; 
+    width: 100px;
+    height: 38px; 
     position: absolute;
-    right: 4px;
+    right: 12px;
     background-color:#b9e9f5;
     opacity:0;
-    transform:rotate(179deg); 
+    transform:rotate(180deg); 
 }
 >.play {                                       /* 设置播放器logo大小和位置/绝对定位 */
     width: 30px;
