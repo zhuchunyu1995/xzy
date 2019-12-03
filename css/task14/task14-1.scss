@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+}
+
+
+$background: #fafafa;
+$nav: #29b078;
+$color: #999999;
+$color-1:#fff;
+
+.nav {
+    background: $nav;
+
+    >.nav-navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+
+
+        >.nav-box {
+            display: flex;
+            width: 38%;
+
+            >.nav-text {
+                flex-basis: 25%;
+                display: flex;
+                justify-content: flex-end;
+                color: $color-1;
+                font-size: 20px;
+            }
+        }
+    }
+
+}

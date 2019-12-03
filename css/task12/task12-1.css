@@ -214,3 +214,8 @@ body {
   width: 36px;
   height: 36px;
 }
+
+a {
+  color: #bcbdbe;
+  text-decoration: none;
+}
