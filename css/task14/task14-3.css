@@ -135,115 +135,70 @@ body {
 
 .content {
   width: 100%;
-  background: #fafafa;
+  height: 279px;
+  background: #fff;
   position: absolute;
   top: 132px;
   transition: all 0.3s linear 0s;
 }
 
-.banner {
-  width: 100%;
-  overflow: hidden;
-  object-fit: cover;
-  height: 300px;
-}
-
 .home {
-  padding: 20px 0;
   width: 87%;
   margin: 0 auto;
 }
 
-.home span {
+.home .home-1 {
+  border-bottom: 1px solid #d0d6d9;
+}
+
+.home .home-1 span {
   color: #29b078;
+  line-height: 40px;
 }
 
-.synopsis {
-  width: 87%;
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 17%;
-}
-
-.synopsis .left {
-  flex-basis: 19%;
-  border: 1px solid #ededed;
-  margin-right: 3%;
-  height: 294px;
-  background: #fff;
-}
-
-.synopsis .left .left-1 {
-  display: flex;
-  border-bottom: 1px solid #e6e6e6;
-  justify-content: center;
-  align-items: center;
-}
-
-.synopsis .left .circle {
-  width: 8px;
-  height: 8px;
-  border-radius: 100%;
-  border: 1px solid #ffa979;
-  display: inline-block;
-}
-
-.synopsis .left .block {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  color: #29b078;
+.home .home-2 {
   font-size: 13px;
-  padding: 20px 0;
+  line-height: 60px;
+  border-bottom: 1px solid #d0d6d9;
 }
 
-.synopsis .left .block .block-1 {
-  width: 98px;
-  line-height: 50px;
-  padding-left: 30px;
+.home .home-3 {
+  line-height: 60px;
+  border-bottom: 1px solid #d0d6d9;
 }
 
-.synopsis .right {
-  flex-basis: 78%;
-  border: 1px solid #ededed;
-  font-size: 13px;
-  color: #999999;
-  background: #fff;
-}
-
-.block-1:active .circle {
-  background: #ffa979;
-}
-
-.block-1:active span {
-  color: #ffa979;
-}
-
-.top {
-  border-bottom: 1px solid #ededed;
-}
-
-.top .top-1 {
-  width: 80%;
-  margin: 0 auto;
+.tabulation {
   display: flex;
-  align-items: center;
-  line-height: 24px;
+  flex-wrap: wrap;
 }
 
-.top .img {
-  padding-right: 30px;
+.tabulation .tabulation-1 {
+  flex-basis: 32%;
 }
 
-.top-2 {
-  width: 80%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  text-indent: 20px;
-  line-height: 24px;
-  padding-top: 20px;
+.tabulation table {
+  width: 353px;
+  padding: 10px;
   word-break: break-all;
+}
+
+.tabulation table span {
+  font-size: 12px;
+}
+
+.tabulation table img {
+  width: 120px;
+  padding-right: 10px;
+}
+
+.tabulation table p {
+  margin-bottom: 5px;
+  margin-top: 0;
+  font-size: 14px;
+}
+
+.tabulation .star {
+  width: 13px;
 }
 
 .footer {
@@ -252,7 +207,7 @@ body {
 
 .footer > .footer-box {
   margin: 0 auto;
-  width: 80%;
+  width: 86%;
   display: flex;
   justify-content: space-between;
   align-items: center;
