@@ -8,18 +8,19 @@ $color: #a7a7a7;
 $color-1: #fbb435;
 $color-2: #fff;
 $border: #c9c9c9;
+
+
 .box {
     background: #f0f0f0;
     padding-bottom: 40px;
-    position: relative;
     overflow: hidden;
-    height: 100vh;
-    
+    position: relative;
+    height: 100%;
     left: 0%;
     transition:left 0.5s;
 
 
->.header {
+.header {
     background: $background;
     height: 60px;
     display: flex;
@@ -27,9 +28,14 @@ $border: #c9c9c9;
 }
 }
 
+
+
+
+
 .box-1 {
      width: 92%;
      margin: 0 auto;
+     transition:  all 2s; 
  .block-1 {
      height: 70px;
      border: 1px solid $border;
@@ -159,12 +165,12 @@ $border: #c9c9c9;
     z-index: 999;
     background: $color-2;
     opacity: 1;
-    top: 60;
-    left: 0;
+    left: -261px;
     transition:left 0.5s;
     height: 100%;
     width: 260px;
-    display: none;
+    transition:  all 1s; 
+    
 }
 
 
@@ -230,12 +236,16 @@ a {
 }
 
 #t1:checked~ .list {
-    display: block;
+    left: 0;
+    transition:  all 1s; 
+    
 }
 
 #t1:checked~ .box-1 {
-    position: absolute;
-    left: 260px;
-    height: 100vh;
+    transform:translate(260px,0px); 
+     transition:  all 1s; 
+        
+    
 
 }
+
