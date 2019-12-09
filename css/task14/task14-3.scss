@@ -55,25 +55,21 @@ $color-2: #fafafa;
     display: flex;
     color: $color-1;
     padding: 17px 0;
+    text-align: center;
 
-   
-   
-   
     .link-text {
         text-align: center;
         font-size: 18px;
-    
 
-@media (min-width:768px) {
-     &:hover {
-        height: 54px;
-        border-bottom: 3px solid $color-1;
-         }
-        }
     }
     }
 
-
+    @media (min-width:768px) {
+        li:hover {
+           height: 54px;
+           border-bottom: 3px solid $color-1;
+            }
+           }
 
     @media  screen and (min-width:320px) and (max-width: 576.98px) {
         
@@ -226,12 +222,10 @@ $color-2: #fafafa;
         padding-top: 0;
         line-height: 50px;
         display: none;
-    
-        .link-text:hover {
-            background: teal; 
-        }
     }
-    
+    li:hover {
+        background: teal; 
+    }
     #pull:checked ~ .nav-link {
         display: block;
     }
