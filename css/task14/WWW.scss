@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+}
+$background:#26a26f;
+$color-1:#fff;
+
+.header {
+    width: 86%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 30px;
+    span {
+     color: $background;
+     font-size: 13px;
+    }
+  img {
+      width: 90px;
+      padding-right: 20px;
+  }
+}
+
+.nav {
+    background: $background;
+    position: relative;
+
+    .nav-width {
+        width: 86%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      
+          input {
+              display: none;
+          }
+       
+       .nav-img {
+           display: flex;
+           align-items: center;
+           justify-content: space-between;
+           width: 60%;
+       }
+    }
+}
+
+
+
+
+
+
+.nav-link {
+    list-style-type:none;
+    display: flex;
+    color: $color-1;
+    padding: 17px 0;
+
+   
+   
+   
+    .link-text {
+        text-align: center;
+        font-size: 18px;
+     
+
+@media (min-width:768px) {
+     &:hover {
+        height: 54px;
+        border-bottom: 3px solid $color-1;
+         }
+        }
+    }
+    }
+
+    
+
+
+@media  screen and (min-width:320px) and (max-width: 767.98px) {
+    
+    
+    .an:before {
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: black;
+            position: absolute;
+            top: 20px;
+            right: 7%;
+            opacity: 0;
+
+    }
+
+    .button {
+        width: 40px;
+        height: 40px;
+        background: #47d197;
+        border: 0;
+        border-radius: 5px;
+        outline: none;
+        pointer-events:none; 
+    
+        >.iconfont {
+            color: #33946b;
+        }
+
+        
+}
+.nav-width {
+    width: 100% !important;
+}
+
+.nav-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+}
+
+.nav-img {
+    width: 86% !important;
+    height: 80px;
+    margin: 0 auto;
+   
+}
+
+.nav-link {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 0;
+    line-height: 50px;
+    display: none;
+
+    .link-text:hover {
+        transition:  all 2s linear; 
+        background: teal; 
+    }
+}
+
+#pull:checked ~ .nav-link {
+    display: block;
+}
+
+
+
+}
+
+
+@media (min-width:768px) { 
+.button {
+    display: none;
+}
+
+.nav-link {
+
+    display: flex;
+    color: $color-1;
+    padding: 17px 0;
+
+   
+   
+   
+    .link-text {
+        flex-basis: 25%;
+        text-align: center;
+        font-size: 18px;
+     }
+    }
+
+    .nav-text {
+        width: 40%;
+        height: 90px;
+       
+    }
+
+}
+
