@@ -335,8 +335,7 @@ body {
 }
 
 .logo-s .list-2 {
-  border-left: 1px dashed transparent;
-  background: linear-gradient(#fafafa, #fafafa) padding-box, repeating-linear-gradient(-45deg, #ccc 0, #ccc 0.25em, white 0, white 0.75em);
+  border-left: 1px dashed #999999;
   align-items: center;
   justify-content: flex-end;
 }
