@@ -113,7 +113,7 @@ $color-2: #fafafa;
          padding-right:0;
      }
     .nav-link {
-        height: 86px;
+        height: 94px;
     }
     .nav-link {
         line-height: 30px !important;
@@ -342,6 +342,9 @@ $border:#d0d6d9;
 
 a:hover {
     background: $background;
+    padding:  5px  0;
+    border-radius: 3px;
+    color: #fff !important;
 }
 
 .dd {
