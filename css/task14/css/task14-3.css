@@ -279,7 +279,7 @@ body {
   text-align: center;
 }
 
-a:hover {
+.po:hover {
   background: #26a26f;
   padding: 5px  5px;
   border-radius: 3px;
