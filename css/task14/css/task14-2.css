@@ -128,11 +128,13 @@ ul li {
     flex-wrap: wrap;
   }
   .left {
-    overflow: auto;
-    height: 150px !important;
     flex-basis: 100% !important;
   }
-  .left::-webkit-scrollbar {
+  .block {
+    overflow: auto;
+    height: 150px !important;
+  }
+  .block::-webkit-scrollbar {
     display: none;
   }
   .right {
@@ -145,7 +147,7 @@ ul li {
     height: 40px;
     background: black;
     position: absolute;
-    top: 20px;
+    top: 12px;
     right: 7%;
     opacity: 0;
   }

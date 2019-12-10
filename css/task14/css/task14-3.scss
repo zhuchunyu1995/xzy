@@ -165,7 +165,7 @@ $color-2: #fafafa;
                 height: 27px;
                 background: black;
                 position: absolute;
-                top: 20px;
+                top: 12px;
                 right: 7%;
                 opacity: 0;
     
@@ -330,9 +330,20 @@ $border:#d0d6d9;
         display: flex;
         justify-content: space-between;
         padding-left: 3%;
+        flex-wrap: wrap;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 140px;
+          }
+
+
         span {
             font-size: 13px;
             color: black ;
+        width: 70px;
+        text-align: center;
             
         }
       
@@ -342,9 +353,10 @@ $border:#d0d6d9;
 
 a:hover {
     background: $background;
-    padding:  5px  0;
+    padding:  5px  5px;
     border-radius: 3px;
     color: #fff !important;
+    
 }
 
 .dd {

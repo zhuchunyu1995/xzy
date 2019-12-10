@@ -134,7 +134,7 @@ body {
     height: 27px;
     background: black;
     position: absolute;
-    top: 20px;
+    top: 12px;
     right: 7%;
     opacity: 0;
   }
@@ -263,16 +263,25 @@ body {
   display: flex;
   justify-content: space-between;
   padding-left: 3%;
+  flex-wrap: wrap;
+}
+
+.skip > .skip-width:after {
+  content: "";
+  display: block;
+  width: 140px;
 }
 
 .skip > .skip-width span {
   font-size: 13px;
   color: black;
+  width: 70px;
+  text-align: center;
 }
 
 a:hover {
   background: #26a26f;
-  padding: 5px  0;
+  padding: 5px  5px;
   border-radius: 3px;
   color: #fff !important;
 }

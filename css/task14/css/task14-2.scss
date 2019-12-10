@@ -163,13 +163,17 @@ ul {
     .synopsis {
         flex-wrap: wrap;
     }
+
     .left {
-        overflow: auto;
-        height: 150px !important;
         flex-basis: 100% !important;
     }
+    .block {
+        overflow: auto;
+        height: 150px !important;
+       
+    }
 
-    .left::-webkit-scrollbar {
+    .block::-webkit-scrollbar {
         display: none;
     }
     .right {
@@ -184,7 +188,7 @@ ul {
             height: 40px;
             background: black;
             position: absolute;
-            top: 20px;
+            top: 12px;
             right: 7%;
             opacity: 0;
 
