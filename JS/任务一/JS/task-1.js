@@ -1,37 +1,70 @@
+var block = document.getElementsByClassName("block");
+var group = 9;
+
+function array() {
+  var num = [];
+  for (i = 0; i < group; i++) {
+    num[i] = i;
+  }
+  var empty = [];
+  for (i = 0; i < 3; i++) {
+    var ran = Math.floor(Math.random() * (num.length - i));
+    empty.push(num[ran]);
+    num[ran] = num[num.length - i - 1];
+    console.log(empty)
+  }
+  circulation();
+  if (empty !== num) {
+    block[empty[0]].style.background = blockColor();
+    block[empty[1]].style.background = blockColor();
+    block[empty[2]].style.background = blockColor();
+  }
+
+}
 
 
-document.getElementById("an").addEventListener("click", function ()
-  
+
+function circulation() //循环赋值
 {
-        var arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]; //数组0到9
-        var result = []; //空数组
-        var ranNum = 3; //变量值为3
-        for (var i = 0; i < ranNum; i++) { //i等于0，i小于数组ranNum5，i循环加1
-            var ran = Math.floor(Math.random() * (arr.length - i)); // 变量ran的值等于0到1 乘以arr数组长度
-            result.push(arr[ran]); //向数组result里输入上面乘积的数字
-            arr[ran] = arr[arr.length - i - 1]; //arr最大长度减去0和1，覆盖被抽走的数字
-        };
-     return result;
-    
+    for (i = 0; i < group; i++) {
+        block[i].style.background = "#ffa500";
     }
-    
-    
-    
-    );
-   
+}
+
+function blockColor()
+{
+
+var r=Math.floor(Math.random() * 256);
+var g=Math.floor(Math.random() * 256);
+var b=Math.floor(Math.random() * 256);
+return "rgb(" + r + "," + g +"," + b +")"; 
+
+}
 
 
-
-document.getElementById("ans").addEventListener("click", function ()
-
-    {
-      document.getElementsByClassName("block")[1].style.backgroundColor = "#999";
-
-    });
+var open="of";
 
 
+function start() {
+  if(open === "of")
+  {
+      opens=setInterval(function () {
+      array()
+  }, 1000);
+  }
+  open = "on";
+}
 
 
+function stop() {
+  clearInterval(opens);
+  circulation()
+  open = "of";
+}
 
-
-
+  
+       
+           
+               
+            
+       
