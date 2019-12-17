@@ -1,0 +1,31 @@
+#wrap {
+  width: 100vmin;
+  height: 100vmin;
+  margin: 0 auto;
+}
+
+#wrap > div {
+  border-radius: 10px;
+  background: #ffa500;
+  height: 31.3%;
+  float: left;
+  width: 31.3%;
+  margin: 1%;
+}
+
+#wrap button {
+  border: 1px solid #ffa500;
+  background: #fff;
+  color: #ffa500;
+  display: block;
+  height: 40px;
+  margin: 0 auto;
+  margin-top: 1%;
+  width: 100%;
+  outline: none;
+}
+
+#wrap button:hover {
+  background: #ffa500;
+  color: #fff;
+}
