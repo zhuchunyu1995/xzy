@@ -1,0 +1,112 @@
+body {
+    margin: 0 auto;
+    min-width: 320px;
+    max-width: 768px;
+}
+
+$background: #f0f0f0;
+$background-color: #29bde0;
+$color: #fcbd4e;
+$color-f: #fff;
+
+.wrap {
+    background: $background;
+    padding-bottom: 1%;
+
+    >.hot {
+        padding: 2%;
+        background: $color-f;
+    }
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 1.5%;
+    background: $background-color;
+    display: flex;
+    align-items: center;
+
+    >img {
+        width: 20px;
+        height: 30px;
+        padding: 2%;
+    }
+}
+
+
+.distribution {
+    width: 96%;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid $background;
+    background: $color-f;
+}
+
+.role {
+    width: 96%;
+    background: $color-f;
+    margin: 0 auto;
+    margin-top: 1%;
+    display: flex;
+    border: 1px solid $background;
+
+    >.role-logo {
+        width: 50%;
+        padding-top: 2%;
+        padding-bottom: 40%;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 60px;
+            padding: 0 5%;
+        }
+    }
+}
+
+    .word {
+        @extend .role;
+            >.box {
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 2%;
+                    >.civilian {
+                        margin-bottom: 5%;
+                        border-bottom: 1.3px solid $background;
+                        font-size: 17px;
+                        line-height: 40px;
+                        color: #d7d7d7; 
+                    }
+            }
+    }
+
+    .amount {
+        @extend .role;
+            >.number {
+                width: 80%;
+                margin: 0 auto;
+                padding-top: 3.5%;
+                padding-bottom: 20%;
+                font-size: 19px;
+            }
+
+    }
+    .footer {
+        width: 96%;
+        background: $color-f;
+        margin: 0 auto;
+        margin-top: 3%;
+        margin-bottom: 3%;
+            button {
+                width: 100%;
+                font-size: 24px;
+                color: $color-f;
+                background: $color;
+                border: 0;
+                line-height: 60px;
+                outline: none;
+            }
+    }
