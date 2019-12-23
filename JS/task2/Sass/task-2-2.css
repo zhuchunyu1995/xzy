@@ -48,6 +48,13 @@ body {
   border: 1px solid #f0f0f0;
 }
 
+.role .recompose, .word .recompose, .amount .recompose {
+  width: 17px;
+  font-size: 13px;
+  outline: none;
+  border: none;
+}
+
 .role > .role-logo, .word > .role-logo, .amount > .role-logo {
   width: 50%;
   padding-top: 2%;
@@ -75,12 +82,70 @@ body {
   color: #d7d7d7;
 }
 
+.word > .box > .civilian > .text {
+  outline: none;
+  border: none;
+  color: #fcbd4e;
+  font-size: 12px;
+  padding-left: 2%;
+}
+
 .amount > .number {
   width: 80%;
   margin: 0 auto;
   padding-top: 3.5%;
-  padding-bottom: 20%;
-  font-size: 19px;
+  padding-bottom: 5%;
+  font-size: 15px;
+}
+
+.amount > .number .game::-webkit-input-placeholder {
+  color: #fcbd4e;
+}
+
+.amount > .number > .game {
+  width: 34px;
+  height: 26px;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #fcbd4e;
+  text-align: center;
+  outline: none;
+  border: none;
+  background: #f0f0f0;
+}
+
+.amount > .number > .player-color {
+  color: #fcbd4e;
+  font-size: 12px;
+}
+
+.amount > .number > .progress-bar {
+  margin-top: 10%;
+}
+
+.amount > .number > .progress-bar button {
+  width: 21px;
+  color: #fcbd4e;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  outline: none;
+}
+
+.amount > .number input[type="range"] {
+  width: 76%;
+  height: 5px;
+  outline: none;
+  -webkit-appearance: none;
+  background-color: #fcbd4e;
+}
+
+.amount > .number input[type="range"]::-webkit-slider-thumb {
+  width: 30px;
+  height: 20px;
+  -webkit-appearance: none;
+  border-radius: 5px;
+  border: 1px solid #fcbd4e;
+  background: #fff;
 }
 
 .footer {

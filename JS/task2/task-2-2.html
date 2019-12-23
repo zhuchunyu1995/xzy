@@ -26,26 +26,24 @@
         <div class="role">
             <div class="role-logo">
                 <img src="./img/photo-1.png">
-                <span>幽灵&nbsp;2&nbsp;人</span>
+                <span>幽灵&nbsp;<input type="text" readonly="readonly"   maxlength="2" placeholder="2" id="specter" class="recompose" onchange="ts(value);">&nbsp;人</span>
             </div>
 
             <div class="role-logo">
                 <img src="./img/photo-2.png">
-                <span>水民&nbsp;6&nbsp;人</span>
+                <span>水民&nbsp;<input type="text" readonly="readonly"  maxlength="2" placeholder="6" id="civilian" class="recompose" onchange="ts(value);">&nbsp;人</span>
             </div>
         </div>
 
         <div class="word">
             <div class="box">
                 <div class="civilian">
-                    <span>水民词组</span>
-
-
+                    <label for="plebs">水民词组:</label>
+                    <input type="text" placeholder="限输入10个字内" maxlength="10" class="text" id="plebs">
                 </div>
-
-
                 <div class="civilian">
-                    <span>幽灵词组</span>
+                    <label for="ghost">幽灵词组:</label>
+                    <input type="text" placeholder="限输入10个字内" maxlength="10" class="text" id="ghost">
                 </div>
             </div>
         </div>
@@ -53,21 +51,26 @@
 
         <div class="amount">
             <div class="number">
-                <span>请输入玩家数量</span>
+                <label for="player">请输入玩家数量</label>
+                <input type="text" maxlength="2" placeholder="8" class="game"  id="player" onchange="tr(value);">
+                <label for="player" class="player-color">玩家数量为4—18</label>
+
+
+                <div class="progress-bar">
+                    <button class="dd" id="subtract">-</button>
+                    <input type="range"  min="4" max="18" class="sliding-1"  id="sliding" onchange="tr(value);" >
+                    <button class="dda" id="add" >+</button>
+                </div>
             </div>
+
         </div>
 
         <div class="footer">
-            <button type="button">去发牌</button>
+            <button type="button" class="acquire">去发牌</button>
         </div>
 
-
-
-
-
-
-
-
     </div>
+    <script src="./JS/jquery-3.4.1.slim.js"></script>
+<script type="text/javascript" src="./JS/task-2-3.js"></script>
 </body>
 </html>
