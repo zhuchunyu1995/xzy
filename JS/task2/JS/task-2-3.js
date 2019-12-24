@@ -11,13 +11,20 @@ function tr(value) { // 关联玩家人数和滑块
         a[i].value = value;
     }
 
+
+
+
+
+
+
+
       y=Math.round(value * 0.292);
       x=value-y;
       $(specter).val(y);
       $(civilian).val(x);
 
 
-    return value;
+  
 }
 
 
