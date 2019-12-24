@@ -1,68 +1,62 @@
-function tr(value){
-    var a=[document.getElementById('player'),document.getElementById('sliding')];
-    for(var i=0;i<a.length;i++){
-        a[i].value=value;}
-            if(value<4) {
-                alert('最少4人开哦');
-            }
-            else if(value>18) {
-                alert('人有点多哦');
-            }    
-        
-         return value;       
+var player = document.getElementById('player'); //玩家人数输入框
+var sliding = document.getElementById('sliding'); // 滑块
+var subtract = document.getElementById('subtract'); //减
+var add = document.getElementById('add'); //加
+var specter = document.getElementById('specter'); //幽灵人数
+var civilian = document.getElementById('civilian'); //水民人数
+
+function tr(value) { // 关联玩家人数和滑块
+    var a = [player, sliding];
+    for (var i = 0; i < a.length; i++) {
+        a[i].value = value;
+    }
+
+      y=Math.round(value * 0.292);
+      x=value-y;
+      $(specter).val(y);
+      $(civilian).val(x);
+
+
+    return value;
 }
 
- 
-//滑动条监听，实现滑动条和输入框人数同步功能
-input_range.oninput = function () {
-    input_text.value = input_range.value;
+
+
+subtract.onclick = function () { //减号
+    var t = sliding;
+    var s = t.value;
+    if (s > 4) {
+        s--;
+    }
+
+    
+    y=Math.round(s * 0.292);
+    x=s-y;
+    $(specter).val(y);
+    $(civilian).val(x);
+
+    $(player).val(s);
+    $(sliding).val(s);
    
 }
 
-input_text.oninput = function () {
-    input_range.value = input_text.value;
+add.onclick = function () { //加号
+    var t = sliding;
+    var s = t.value;
+    if (s < 18) {
+        s++;
+    }
+    
+    y=Math.round(s * 0.292);
+    x=s-y;
+
+    $(specter).val(y);
+    $(civilian).val(x);
+
+    $(player).val(s);
+    $(sliding).val(s);
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$("#subtract").click(function () {
-    var move = $(".sliding-1")[0];
-    var a = move.value;
-    if (a > 1) {
-        a--;
-        move.value = a;
-
-    } else {
-        move.value = 1;
-    }
-
-  
-
-});
-
-
-$("#ad").click(function () {
-    var mov = $(".sliding-1")[0];
-    var b = mov.value;
-    b++;
-    mov.value=b;
-    console.log(b)
-
-});
 
