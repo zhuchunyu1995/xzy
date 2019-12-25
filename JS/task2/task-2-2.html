@@ -26,12 +26,12 @@
         <div class="role">
             <div class="role-logo">
                 <img src="./img/photo-1.png">
-                <span>幽灵&nbsp;<input type="text" readonly="readonly"   maxlength="2" placeholder="2" id="specter" class="recompose">&nbsp;人</span>
+                <span>幽灵&nbsp;<input type="text" readonly="readonly"   maxlength="2"  id="specter" class="recompose">&nbsp;人</span>
             </div>
 
             <div class="role-logo">
                 <img src="./img/photo-2.png">
-                <span>水民&nbsp;<input type="text" readonly="readonly"  maxlength="2" placeholder="6" id="civilian" class="recompose">&nbsp;人</span>
+                <span>水民&nbsp;<input type="text" readonly="readonly"  maxlength="2"  id="civilian" class="recompose">&nbsp;人</span>
             </div>
         </div>
 
@@ -52,13 +52,13 @@
         <div class="amount">
             <div class="number">
                 <label for="player">请输入玩家数量</label>
-                <input type="text" maxlength="2" placeholder="8" class="game"  id="player" oninput="tr(value);">
-                <label for="player" class="player-color">玩家数量为4—18</label>
+                <input type="text" maxlength="2"  class="game"  id="player" onchange="tr(value);" oninput="value=value.replace(/[^\d]/g,'')">
+                <label for="player" class="player-color" >玩家数量为4—18</label>
 
 
                 <div class="progress-bar">
                     <button class="dd" id="subtract" >-</button>
-                    <input type="range"  min="4" max="18" class="sliding-1"  id="sliding" oninput="tr(value);" >
+                    <input type="range"  min="4" max="18" class="sliding-1"  id="sliding" value="4" oninput="tr(value);" >
                     <button class="dda" id="add" onchange="tr(value);">+</button>
                 </div>
             </div>
@@ -66,7 +66,7 @@
         </div>
 
         <div class="footer">
-            <button type="button" class="acquire">去发牌</button>
+            <button type="button" id="pps" onclick="acquire()">去发牌</button>
         </div>
 
     </div>
