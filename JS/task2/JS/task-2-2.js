@@ -67,6 +67,10 @@ function deal() {     //判断人数
         alert('请输入正确的玩家数量')
         $("#player").val("4");
     }
+    else {
+        window.location.href="https://zhuchunyu1995.github.io/xzy/JS/task3/task-3-1.html";
+        
+    }
 
 }
 

@@ -1,5 +1,5 @@
 $(function() {
     $(".button").click(function() {
-        window.location.href="https://zhuchunyu1995.github.io/xzy/JS/task2/task-2-1.html";
+        window.location.href="https://zhuchunyu1995.github.io/xzy/JS/task3/task-3-2.html";
     });
 });
