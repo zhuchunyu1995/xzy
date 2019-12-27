@@ -20,24 +20,43 @@
 
     <div class="status">
         <div class="number">
-            <input type="text" placeholder="1" readonly="readonly">
+            <input type="text" placeholder="1" readonly="readonly" id="identity1">
         </div>
 
         <div class="block">
             <div class="photo">
-            <img src="./img/photo-1.png">
+            <img src="./img/photo-1.png" id="logo">
            </div>
         </div>
 
-        <div class="button">
-        查看<input type="text" placeholder="1" readonly="readonly">号身份
 
+        <div class="block-1">
+            <div class="photo-2">
+                 <img src="./img/status.png" id="logo">
+           </div>
+          <div class="result-1">
+            <input type="text" class="name" readonly="readonly" maxlength="2" id="sf">
+          </div>
+          <div class="warn">
+              <p>想办法猜到别人的词，同时还要注意不要暴露自己哦！</p>
+          </div>
         </div>
+
+
+        
+        <div class="button"  onclick="tx()">
+        查看<input type="text" placeholder="1" readonly="readonly" id="identity">号身份
+        </div>
+
+        <div class="button-1" onclick="tx()">
+            隐藏并传递给<input type="text" placeholder="2" readonly="readonly">号
+            </div>
+
     </div>
 
 
 
-
+  
 
 
 

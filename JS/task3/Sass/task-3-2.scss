@@ -68,6 +68,7 @@ body {
 
         >.block {
             width: 72%;
+            height: 400px;
             margin: 0 auto;
             margin-top: 10%;
             background: $background;
@@ -76,9 +77,9 @@ body {
             align-items: center;
             flex-direction: column;
             .photo {
-                padding-top: 15%;
                 display: flex;
                 justify-content: center;
+                padding-top: 50px;
                 img {
                     width: 70%;  
                 }  
@@ -98,35 +99,25 @@ body {
                             border: none;
                             outline: none;
                             background: $background;
-                        }
-                        .text {
-                            width: 50px;
-                            height: 26px;
-                            font-size: 24px;
-                            color: #f56b81;
-                            border: none;
-                            outline: none;
-                            background: $background;
-                            justify-content: center;
-                            
-                        }
+                            margin-top: 20px;
+                        } 
                 }
         }
 
         .warn {
             width: 100%;
+            margin-top: 30px;
             border-top: 1px solid $color-f;
             text-align: center;
             p {
                 padding: 0 20px;
                 font-size: 17px;
                 color: $color;
-                padding-bottom: 7%;
             }
         }
 
 
-        >.button {
+        >.button-1 {
             width: 70%;
             position: fixed;
             bottom: 3%;
