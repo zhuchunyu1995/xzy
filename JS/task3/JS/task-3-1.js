@@ -12,12 +12,30 @@ distribution = JSON.parse(distribution);
    
 
 
+    
 
 
-    function tx(){
 
 
-        $('.block-1').toggle()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function tx(){               //点击 隐藏 出现
+
+
+        $('.block-1').toggle()  
         $('.block').toggle()
 
     
@@ -25,7 +43,6 @@ distribution = JSON.parse(distribution);
         $('.button').toggle()
 
        }
-    
     
        $('.block-1').hide()
        $('.button-1').hide()

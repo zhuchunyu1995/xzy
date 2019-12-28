@@ -4,7 +4,7 @@ body {
 }
 
 .hot {
-  padding: 2%;
+  padding: 10px;
   background: #fff;
 }
 
@@ -39,10 +39,11 @@ body {
   border: 1px solid #ffedc5;
   border-radius: 100%;
   left: calc(50% - 25px);
-  top: -25px;
+  top: 74px;
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
 }
 
 .status > .number input {
@@ -63,12 +64,14 @@ body {
   width: 72%;
   height: 400px;
   margin: 0 auto;
-  margin-top: 10%;
+  top: 100px;
   background: #ffedc5;
   border: 3px solid #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  left: calc(50% - 36.5%);
 }
 
 .status > .block .photo {
@@ -113,13 +116,14 @@ body {
 .block-1 {
   width: 72%;
   height: 400px;
-  margin: 0 auto;
-  margin-top: 10%;
+  top: 100px;
   background: #ffedc5;
   border: 3px solid #fff;
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  left: calc(50% - 36.5%);
 }
 
 .block-1 .photo-2 {
