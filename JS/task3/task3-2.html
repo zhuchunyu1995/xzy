@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./JS/jquery-3.4.1.slim.js"></script>
     <link href="./Sass/task3-2.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 
 <body>
-    <div class="box">
+    
         <div class="header">
             <img src="./img/list.png">
             <span>投票</span>
@@ -24,183 +25,17 @@
         </div>
         <span class="hint-1">点击得票数最多人的头像</span>
 
-        <div class="block">
-
-            <div class="block-1">
-                <div class="block-2">
-                    <div class="top">
-                        <span>乔碧罗</span>
-                    </div>
-                    <div class="bottom">
-                        <span>1号</span>
-                    </div>
-                </div>
-                <div class="block-3">
-                    <img class="combination" src="./img/combination.png">
-                    </div>
-            </div>
-
-            <div class="block-1">
-                <div class="block-2">
-                    <div class="top">
-                        <span>蔡徐坤</span>
-                    </div>
-                    <div class="bottom">
-                        <span>2号</span>
-                    </div>
-                </div >
-                <div class="block-3">
-                    <img class="combination" src="./img/combination.png">
-                </div>
-            </div>
-
-            <div class="block-1">
-                <div class="block-2">
-                    <div class="top">
-                        <span>鹿晗</span>
-                    </div>
-                    <div class="bottom">
-                        <span>3号</span>
-                    </div>
-                </div>
-                <div class="block-3">
-                    <img class="combination" src="./img/combination.png">
-                    </div>
-            </div>
-
-
-            <div class="block-1">
-                    <div class="block-2">
-                        <div class="top">
-                            <span>乔碧罗</span>
-                        </div>
-                        <div class="bottom">
-                            <span>1号</span>
-                        </div>
-                    </div>
-                    <div class="block-3">
-                        <img class="combination" src="./img/combination.png">
-                        </div>
-                </div>
-    
-                <div class="block-1">
-                    <div class="block-2">
-                        <div class="top">
-                            <span>蔡徐坤</span>
-                        </div>
-                        <div class="bottom">
-                            <span>2号</span>
-                        </div>
-                    </div >
-                    <div class="block-3">
-                        <img class="combination" src="./img/combination.png">
-                    </div>
-                </div>
-    
-                <div class="block-1">
-                    <div class="block-2">
-                        <div class="top">
-                            <span>鹿晗</span>
-                        </div>
-                        <div class="bottom">
-                            <span>3号</span>
-                        </div>
-                    </div>
-                    <div class="block-3">
-                        <img class="combination" src="./img/combination.png">
-                        </div>
-                </div>
-
-                <div class="block-1">
-                        <div class="block-2">
-                            <div class="top">
-                                <span>乔碧罗</span>
-                            </div>
-                            <div class="bottom">
-                                <span>1号</span>
-                            </div>
-                        </div>
-                        <div class="block-3">
-                            <img class="combination" src="./img/combination.png">
-                            </div>
-                    </div>
-        
-                    <div class="block-1">
-                        <div class="block-2">
-                            <div class="top">
-                                <span>蔡徐坤</span>
-                            </div>
-                            <div class="bottom">
-                                <span>2号</span>
-                            </div>
-                        </div >
-                        <div class="block-3">
-                            <img class="combination" src="./img/combination.png">
-                        </div>
-                    </div>
-        
-                    <div class="block-1">
-                        <div class="block-2">
-                            <div class="top">
-                                <span>鹿晗</span>
-                            </div>
-                            <div class="bottom">
-                                <span>3号</span>
-                            </div>
-                        </div>
-                        <div class="block-3">
-                            <img class="combination" src="./img/combination.png">
-                            </div>
-                    </div>
-                    <div class="block-1">
-                            <div class="block-2">
-                                <div class="top">
-                                    <span>乔碧罗</span>
-                                </div>
-                                <div class="bottom">
-                                    <span>1号</span>
-                                </div>
-                            </div>
-                            <div class="block-3">
-                                <img class="combination" src="./img/combination.png">
-                                </div>
-                        </div>
-            
-                        <div class="block-1">
-                            <div class="block-2">
-                                <div class="top">
-                                    <span>蔡徐坤</span>
-                                </div>
-                                <div class="bottom">
-                                    <span>2号</span>
-                                </div>
-                            </div >
-                            <div class="block-3">
-                                <img class="combination" src="./img/combination.png">
-                            </div>
-                        </div>
-            
-                        <div class="block-1" style="padding-bottom: 60px">
-                            <div class="block-2">
-                                <div class="top">
-                                    <span>鹿晗</span>
-                                </div>
-                                <div class="bottom">
-                                    <span>3号</span>
-                                </div>
-                            </div>
-                            <div class="block-3">
-                                <img class="combination" src="./img/combination.png">
-                                </div>
-                        </div>
+        <div class="block" id="boxes">
+          
+                </div>   
+           
         </div>
 
-
-
+       
         <div class="footer">
             <!--页尾 固定定位-->
-            <a href=" https://zhuchunyu1995.github.io/xzy/css/task13/task13-2.html">
-                <button type="button" class="button" type="submit">投死</button>
+            
+                <button type="button" class="button" type="submit" onclick="appendText()">投死</button>
             </a>
         </div>
 
@@ -219,7 +54,7 @@
 
 
 
-    </div>
+    <script type="text/javascript" src="./JS/task-3-2.js"></script>
 </body>
 
 </html>

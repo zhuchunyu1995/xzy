@@ -1,12 +1,6 @@
 body {
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 768px;
-}
-
-.box {
+  margin: 0;
   background: #29bde0;
-  height: 100vh;
 }
 
 .header {
@@ -81,7 +75,7 @@ body {
   flex-wrap: wrap;
 }
 
-.block > .block-1 {
+.block .block-1 {
   flex-basis: 33.33%;
   display: flex;
   flex-direction: column;
@@ -94,7 +88,7 @@ body {
   border: 3px solid #fff;
 }
 
-.block .block-2 > .top {
+.block .block-2 .top {
   height: 64px;
   background: #f5c97b;
   display: flex;
@@ -103,7 +97,17 @@ body {
   font-size: 17px;
 }
 
-.block .block-2 > .bottom {
+.block .block-2 .top .name {
+  width: 50px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  background: #f5c97b;
+  border: none;
+  outline: none;
+}
+
+.block .block-2 .bottom {
   height: 24px;
   background: #83b09a;
   display: flex;
@@ -113,13 +117,22 @@ body {
   color: #fff;
 }
 
+.block .block-2 .bottom .number {
+  width: 30px;
+  text-align: center;
+  color: #fff;
+  border: none;
+  outline: none;
+  background: #83b09a;
+}
+
 .block-3 {
   width: 92px;
   margin: 15px 0;
   height: 19px;
 }
 
-.block-3 > .combination {
+.block-3 .combination {
   width: 92px;
   height: 19px;
   display: none;
@@ -132,8 +145,6 @@ body {
 .footer {
   position: fixed;
   z-index: 99999;
-  max-width: 768px;
-  min-width: 320px;
   width: 100%;
   height: 60px;
   bottom: 0;
