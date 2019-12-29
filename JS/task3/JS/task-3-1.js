@@ -18,31 +18,38 @@ function btn() {          //切换按钮
         if (start === "off") {    //按钮A时b自增
             b++;
             start = "on";
+
+            $('.button').hide() 
+          
         }
         else {
-            if (a < num.length) {    // a等于1 小于num数组最大长度时a自增
+            if (a < num.length ) {    // a等于1 小于num数组最大长度时a自增
                 a++;
+                $('.button').show()  
             }
-
            if(c<num.length-1)  {
             c++; 
-           }
-                         
-            start = "off";  
+           }        
+            start = "off";
+            
        }
     }
-    if (c < num.length) {          
+
+
+    if (c < num.length ) {          
         $('.content').toggle()    //切换
-        $('.button').toggle()    //按钮切换
+        
     }
+
 
     if (c < num.length - 1) {
         $('#conceal').val("隐藏并传递给" + b + "号");  //c小于num数组最大长度减1时显示
     }
-    else if (c > num.length - 2) {
+
+    else if (c > num.length - 3) {
         $('#conceal').val("法官查看");    //c大于当前num数组最大长度-2时 显示法官查看
         $('#conceal').click(function () {    //点击跳转
-            window.location.href = "https://zhuchunyu1995.github.io/xzy/JS/task2/task-2-1.html";  //跳转到法官页面显示身份
+            window.location.href = "task3-2.html";  //跳转到法官页面显示身份
         })
     }
 
