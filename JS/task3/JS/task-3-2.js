@@ -7,6 +7,7 @@ sessionStorage.setItem('num', JSON.stringify(num));  //存值
 sessionStorage.setItem('distribution', JSON.stringify(distribution)); //存值
 
 
+
 for(i=0;i<num.length;i++) {
     var block='<div class="block-1" id="boxes-1">'+
     '<div class="block-2">'+
@@ -14,7 +15,7 @@ for(i=0;i<num.length;i++) {
     '<p>'+distribution[i]+'</p>'+
     '</div>'+
     '<div class="bottom">'+
-    '<p>'+num[i]+'</p>'+
+    '<p>'+[i+1]+'</p>'+
     '</div>'+
     '</div>'+
     '<div class="block-3">'+
