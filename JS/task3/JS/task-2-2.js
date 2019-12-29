@@ -6,7 +6,6 @@ function group(value) {           //关联滑块和玩家数量，赋值并分�
         correlation[i].value = value;
     }
 
- 
 
     specterNum = Math.round(value * 0.292);   //取随机值，四舍五入，幽灵人数
     civilianNum = value - specterNum;           // 平民人数
