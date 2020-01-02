@@ -8,6 +8,9 @@ sessionStorage.setItem('distribution', JSON.stringify(distribution)); //存值
 
 
 
+
+
+
 for(i=0;i<num.length;i++) {
     var block='<div class="block-1" id="boxes-1">'+
     '<div class="block-2">'+
@@ -24,10 +27,14 @@ for(i=0;i<num.length;i++) {
     '</div>';   
     $("#boxes").append(block);   
 }
- 
+
+
+
+
 
 $(function() {
     $(".button").click(function() {
+
         window.location.href="task-4-1.html";
     });
 });
@@ -35,5 +42,3 @@ $(function() {
 
 
 
-
-    
