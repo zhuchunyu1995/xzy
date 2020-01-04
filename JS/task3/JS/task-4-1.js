@@ -162,23 +162,6 @@ if (nm !== null) { //杀人之后变色
 
 
 
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
     $("#end").click(function () {          //结束游戏按钮
         var x;
         var r=confirm("确定要退出本局游戏吗？");
@@ -205,14 +188,14 @@ for(i=0;i<num.length;i++) {
     var block1='<div class="block-1" id="boxes-1">'+
     '<div class="block-2">'+
     '<div class="top">'+
-    '<p>'+distribution[i]+'</p>'+
+    '<p>'+distribution[i].role+'</p>'+
     '</div>'+
     '<div class="bottom">'+
     '<p>'+[i+1]+'</p>'+
     '</div>'+
     '</div>'+
     '<div class="block-3">'+
-    '<img class="combination" src="./img/combination.png">'+
+    '<img class="combination" id="knife" src="./img/combination.png">'+
     '</div>'+
     '</div>';   
     $("#boxes").append(block1);   

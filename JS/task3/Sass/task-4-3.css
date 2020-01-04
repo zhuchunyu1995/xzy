@@ -144,6 +144,10 @@ body {
   display: block;
 }
 
+.block-2:hover .top {
+  background: #83b09a;
+}
+
 .footer {
   position: fixed;
   z-index: 99999;

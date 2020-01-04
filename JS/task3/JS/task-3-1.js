@@ -4,14 +4,15 @@ num = JSON.parse(num);
 var distribution = sessionStorage.getItem('distribution');  //取值
 distribution = JSON.parse(distribution);
 
+
+
+
 sessionStorage.setItem('num', JSON.stringify(num));  //存值 
 sessionStorage.setItem('distribution', JSON.stringify(distribution)); //存值
- 
 var identity = document.getElementById('identity'); //获取显示身份的input ID
 var a = 1;  
 var b = 1;
 var c = 0;
-
 
 var start = "off";  //模拟开关 
 function btn() {          //切换按钮
@@ -31,12 +32,9 @@ function btn() {          //切换按钮
            if(c<num.length-1)  {
             c++; 
            }        
-            start = "off";
-            
+            start = "off"; 
        }
     }
-
-
     if (c < num.length ) {          
         $('.content').toggle()    //切换
         
@@ -50,13 +48,18 @@ function btn() {          //切换按钮
     else if (c > num.length - 3) {
         $('#conceal').val("法官查看");    //c大于当前num数组最大长度-2时 显示法官查看
         $('#conceal').click(function () {    //点击跳转
-            window.location.href = "task3-2.html";  //跳转到法官页面显示身份
+            window.location.href = "task.html";  //跳转到法官页面显示身份
         })
     }
 
     $('#number').val(a);    //赋值
     $('#examine').val("查看" + a + "号身份");   //赋值
-    $(identity).val(distribution[c]);    //数组下标在b按钮时自增
+    $(identity).val(distribution[c].role);    //数组下标在b按钮时自增
+
+
+
+
+
 }
 
 

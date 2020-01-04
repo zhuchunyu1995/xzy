@@ -16,10 +16,14 @@ function group(value) {           //关联滑块和玩家数量，赋值并分�
 
 
     for (var ghost = 0; ghost < specter.value; ghost++) {
-        distribution.push("幽灵");
+        distribution.push(
+            {survival:0,
+             role:"幽灵"});
     }
     for (var citizen = 0; citizen < civilian.value; citizen++) {
-        distribution.push("水民");
+        distribution.push({
+            survival:0,
+            role:"水民"});
     }
 
     for (var i = 0; i < distribution.length; i++) {

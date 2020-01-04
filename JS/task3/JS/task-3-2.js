@@ -12,7 +12,7 @@ for(i=0;i<num.length;i++) {
     var block='<div class="block-1" id="boxes-1">'+
     '<div class="block-2">'+
     '<div class="top">'+
-    '<p>'+distribution[i]+'</p>'+
+    '<p>'+distribution[i].role+'</p>'+
     '</div>'+
     '<div class="bottom">'+
     '<p>'+[i+1]+'</p>'+
