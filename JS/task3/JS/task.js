@@ -6,8 +6,6 @@ var specterNum = JSON.parse(sessionStorage.getItem('specterNum'));  //取值
 
 var civilianNum = JSON.parse(sessionStorage.getItem('civilianNum'));  //取值
 
-
-
 $(function () { //折叠栏
     $(".day").click(function () {
         $(".options").toggle();
@@ -43,6 +41,7 @@ var box = '<div class="box">' + //游戏目录
     '<i class="triangle-left" id="left-1">' + '</i>' +
     '杀手杀人' +
     '</div>' +
+    '<input type="text" id="receive" class="result" readonly="readonly">'+
     '</div>' +
     '<div class="discuss">' +
     '<div class="sun">' +
@@ -111,6 +110,8 @@ function btn(t) {
 }
 
 
+
+
 $('#idea').click(function () { //杀人模块
     if (nm == 0) {
         nm = 1;
@@ -174,8 +175,8 @@ function backtrack() { //杀人之后确定按钮
             if (m == true) {
                 distribution[na].survival = 1;
                 civilianNum--;
+                
                 sessionStorage.setItem('civilianNum', JSON.stringify(civilianNum));  //存值 
-                console.log(civilianNum--)
                 $('.top').eq(na).css("backgroundColor", "#83b09a");
                 sessionStorage.setItem('distribution', JSON.stringify(distribution)); //存值 
                 $('#buttons1').show()
@@ -184,8 +185,11 @@ function backtrack() { //杀人之后确定按钮
                 $('#container').show();
                 $('body').css("backgroundColor", "#f0f0f0")
                 $('#button').hide()
-            
-
+                $('#receive').val("黑天"+(na+1)+"号玩家死亡,"+"身份是水民");
+             
+                if(civilianNum<=specterNum) {
+                    alert("游戏结束")
+                }
             }
         }
     } else {
@@ -193,8 +197,7 @@ function backtrack() { //杀人之后确定按钮
     }
 }
 
-
-
+var a1,b1,c1;
 
 
 $('#ghost').click(function () { //亡灵发言
