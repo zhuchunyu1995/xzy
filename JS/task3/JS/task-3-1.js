@@ -1,8 +1,14 @@
 
-var num = sessionStorage.getItem('num');  //取值
-num = JSON.parse(num);
-var distribution = sessionStorage.getItem('distribution');  //取值
-distribution = JSON.parse(distribution);
+var num = JSON.parse(sessionStorage.getItem('num'));  //取值
+var distribution = JSON.parse(sessionStorage.getItem('distribution'));  //取值
+
+
+
+var specterNum = JSON.parse(sessionStorage.getItem('specterNum'));  //取值
+sessionStorage.setItem('specterNum', JSON.stringify(specterNum));  //存值 
+
+var civilianNum = JSON.parse(sessionStorage.getItem('civilianNum'));  //取值
+sessionStorage.setItem('civilianNum', JSON.stringify(civilianNum));  //存值 
 
 
 

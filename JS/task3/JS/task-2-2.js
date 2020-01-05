@@ -8,7 +8,14 @@ function group(value) {           //关联滑块和玩家数量，赋值并分�
 
 
     specterNum = Math.round(value * 0.292);   //取随机值，四舍五入，幽灵人数
+    sessionStorage.setItem('specterNum', JSON.stringify(specterNum));  //存值 
+
     civilianNum = value - specterNum;           // 平民人数
+    sessionStorage.setItem('civilianNum', JSON.stringify(civilianNum));  //存值 
+
+
+
+
     $(specter).val(specterNum);      //赋值给幽灵
     $(civilian).val(civilianNum);     //赋值给平民
 
