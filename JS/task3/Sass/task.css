@@ -98,6 +98,10 @@ body {
   display: none;
 }
 
+.block-1:hover .combination {
+  display: block;
+}
+
 .box .day {
   width: 98%;
   margin: 5px auto;
@@ -181,6 +185,14 @@ body {
   position: absolute;
   margin-left: 30px;
   top: 100%;
+  outline: none;
+  border: none;
+  text-align: center;
+}
+
+.num-day {
+  width: 70px;
+  height: 27px;
   outline: none;
   border: none;
   text-align: center;

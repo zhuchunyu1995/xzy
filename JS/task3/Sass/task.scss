@@ -103,6 +103,9 @@ color: $color-f;
 
 
 
+.block-1:hover .combination {
+    display: block;
+}
 .box {
 
     .day {
@@ -196,7 +199,13 @@ color: $color-f;
     border: none;
     text-align: center;
 }
-
+.num-day {
+    width: 70px;
+    height: 27px;
+    outline: none;
+    border: none;
+    text-align: center;
+}
 
 
 

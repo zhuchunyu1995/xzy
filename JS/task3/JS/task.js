@@ -1,20 +1,15 @@
-var num = JSON.parse(sessionStorage.getItem('num'));  //取值
-var distribution = JSON.parse(sessionStorage.getItem('distribution'));  //取值
+var num = JSON.parse(sessionStorage.getItem('num')); //取值
+var distribution = JSON.parse(sessionStorage.getItem('distribution')); //取值
 
 
-var specterNum = JSON.parse(sessionStorage.getItem('specterNum'));  //取值
+var specterNum = JSON.parse(sessionStorage.getItem('specterNum')); //取值
 
-var civilianNum = JSON.parse(sessionStorage.getItem('civilianNum'));  //取值
+var civilianNum = JSON.parse(sessionStorage.getItem('civilianNum')); //取值
 
-$(function () { //折叠栏
-    $(".day").click(function () {
-        $(".options").toggle();
-    });
-});
 for (let i = 0; i < num.length; i++) { //循环出的方块
     var block = '<div class="block-1" id="boxes-1">' +
         '<div class="block-2">' +
-        '<div class="top" onclick="btn(' + i + ')" id="aa">' +
+        '<div class="top" onclick="btn(' + i + ')" onmouseover="t1(this)" onmouseout="t2(this)">' +
         '<p>' + distribution[i].role + '</p>' +
         '</div>' +
         '<div class="bottom">' +
@@ -22,14 +17,53 @@ for (let i = 0; i < num.length; i++) { //循环出的方块
         '</div>' +
         '</div>' +
         '<div class="block-3">' +
-        '<img class="combination" src="./img/combination.png">' +
+        '<img class="combination" src="./img/combination.png" onmouseover="ta(this)" onmouseout="taa(this)">' +
         '</div>' +
         '</div>';
     $("#boxes").append(block);
 }
+
+$('#container').hide()
+$('#buttons').hide()
+$('#button').hide()
+
+
+var ka = 1;
+
+function an() { //切换到法官台本页面 改变标题和页尾背景色
+
+    if (ka == 1) {
+        ka = 2;
+        $('.block').hide();
+        $('#container').show();
+        $('body').css("backgroundColor", "#f0f0f0")
+        $('.texts').text("法官台本");
+        $('.footer').css("backgroundColor", "rgba(103, 199, 243, 0.5)")
+        $('.button').css({
+            "width": "45%",
+            "fontSize": "24px",
+            "margin": "0 10px"
+        })
+        $('#buttons1').text("结束游戏")
+        $('#buttons').show()
+
+    } else if (ka == 2) { //ka等于2时 按钮功能改变，点击确定退出游戏，取消 继续游戏
+        var x;
+        var r = confirm("确定要退出本局游戏吗？");
+        if (r == true) {
+            x = window.location.href = "task-2-1.html";
+
+        }
+    }
+}
+
+
+    $(".combination").css("opacity", "0");
+
+
 var box = '<div class="box">' + //游戏目录
     '<div class="day">' +
-    '<span>' + '第一天' + '</span>' +
+    '<span>' + '<input type="text" id="num-days" class="num-day" readonly="readonly">' + '</span>' +
     '</div>' +
     '<div class="options">' +
     '<i class="triangle-top">' + '</i>' +
@@ -41,7 +75,7 @@ var box = '<div class="box">' + //游戏目录
     '<i class="triangle-left" id="left-1">' + '</i>' +
     '杀手杀人' +
     '</div>' +
-    '<input type="text" id="receive" class="result" readonly="readonly">'+
+    '<input type="text" id="receive" class="result" readonly="readonly">' +
     '</div>' +
     '<div class="discuss">' +
     '<div class="sun">' +
@@ -74,42 +108,26 @@ var box = '<div class="box">' + //游戏目录
     '</div>' +
     '</div>' +
     '</div>';
-$("#container").append(box);
-$('#container').hide()
-$('#buttons').hide()
-$('#button').hide()
-var ka = 1;
-function an() { //切换到法官台本页面 改变标题和页尾背景色
-    if (ka == 1) {
-        ka = 2;
-        $('.block').hide();
-        $('#container').show();
-        $('body').css("backgroundColor", "#f0f0f0")
-        $('.texts').text("法官台本");
-        $('.footer').css("backgroundColor", "rgba(103, 199, 243, 0.5)")
-        $('.button').css({
-            "width": "45%",
-            "fontSize": "24px",
-            "margin": "0 10px"
-        })
-        $('#buttons1').text("结束游戏")
-        $('#buttons').show()
-    } else if (ka == 2) { //ka等于2时 按钮功能改变，点击确定退出游戏，取消 继续游戏
-        var x;
-        var r = confirm("确定要退出本局游戏吗？");
-        if (r == true) {
-            x = window.location.href = "task-2-1.html";
-        }
-    }
-}
+
+
+var large = ["一", "二", "三", "四", "五", "六", "七", "八", "九", "十"];
+
+$(".bob").append(box);
+$('#num-days').val("第" + large[0] + "天");
+
+
 var nm = 0;
 var na;
+
 function btn(t) {
     na = t;
-   
 }
 
-
+$(function () { //折叠栏
+    $(".day").click(function () {
+        $(".options").toggle();
+    });
+});
 
 
 $('#idea').click(function () { //杀人模块
@@ -122,9 +140,8 @@ $('#idea').click(function () { //杀人模块
         $('#buttons1').hide()
         $('#buttons').hide()
         $('#button').show()
-        $('.top').click(function () {
-            $('.combination').eq(na).toggle()
-        })
+        $(".combination").css("opacity", "1");
+
     } else {
         alert("请按顺序操作！")
     }
@@ -141,63 +158,74 @@ $('#idea').click(function () { //杀人模块
     }
 })
 
-function backtrack() { //杀人之后确定按钮
-    if (distribution[na].survival === 0) {
-        if (distribution[na].role === "幽灵") { //幽灵不能杀自己人
-            if (nm == 1) {
-                alert("不能自相残杀")
-            }
-            if (nm == 4) { //投票页可以杀所有人
-                var k = confirm("确定要杀此人吗？");
-                if (k == true) {
-                    distribution[na].survival = 1;
-                    specterNum--;
-                    sessionStorage.setItem('specterNum', JSON.stringify(specterNum));  //存值 
-                    console.log(specterNum--)
-                    $('.top').eq(na).css("backgroundColor", "#83b09a");
-                    $('.block').hide();
-                    $('#container').show();
-                    $('#buttons1').show()
-                    $('.texts').text("法官台本");
-                    $('body').css("backgroundColor", "#f0f0f0")
-                    $('#buttons').show()
-                    $('#button').hide()
-
-                    if(specterNum<0) {
-                        alert("游戏结束")
-                    }
-
-                    
-                }
-            }
-        } else {
-            var m = confirm("确定要杀此人吗？"); //杀人  确定改变状态，取消 重新选取
-            if (m == true) {
-                distribution[na].survival = 1;
-                civilianNum--;
-                
-                sessionStorage.setItem('civilianNum', JSON.stringify(civilianNum));  //存值 
-                $('.top').eq(na).css("backgroundColor", "#83b09a");
-                sessionStorage.setItem('distribution', JSON.stringify(distribution)); //存值 
-                $('#buttons1').show()
-                $('#buttons').show()
-                $('.block').hide();
-                $('#container').show();
-                $('body').css("backgroundColor", "#f0f0f0")
-                $('#button').hide()
-                $('#receive').val("黑天"+(na+1)+"号玩家死亡,"+"身份是水民");
-             
-                if(civilianNum<=specterNum) {
-                    alert("游戏结束")
-                }
-            }
-        }
-    } else {
-        alert("该玩家已死亡")
+function t1(x) { //杀人页面方块变色
+    if (nm == 1 || nm == 4) {
+        x.style.backgroundColor = "#8cae9b";
     }
 }
 
-var a1,b1,c1;
+function t2(x) { //恢复颜色
+    if (nm == 1 || nm == 4) {
+        x.style.backgroundColor = "#f5c97b";
+    }
+}
+
+function backtrack() { //杀人之后确定按钮
+    if (na == undefined) {
+        alert("请选择玩家")
+    } else {
+        if (distribution[na].survival === 0) {
+            if (distribution[na].role === "幽灵") { //幽灵不能杀自己人
+                if (nm == 1) {
+                    alert("不能自相残杀")
+                }
+                if (nm == 4) { //投票页可以杀所有人
+                    var k = confirm("确定要杀此人吗？");
+                    if (k == true) {
+                        distribution[na].survival = 1;
+                        specterNum--;
+                        sessionStorage.setItem('specterNum', JSON.stringify(specterNum)); //存值 
+                        $('.top').eq(na).css("backgroundColor", "#83b09a");
+                        $('.block').hide();
+                        $('#container').show();
+                        $('#buttons1').show()
+                        $('.texts').text("法官台本");
+                        $('body').css("backgroundColor", "#f0f0f0")
+                        $('#buttons').show()
+                        $('#button').hide()
+
+                        if (specterNum == 0) {
+                            window.location.href="task-4-1.html";
+                        }
+                    }
+                }
+            } else {
+
+                var m = confirm("确定要杀此人吗？"); //杀人  确定改变状态，取消 重新选取
+                if (m == true) {
+
+                    distribution[na].survival = 1;
+                    civilianNum--;
+                    sessionStorage.setItem('civilianNum', JSON.stringify(civilianNum)); //存值 
+                    $('.top').eq(na).css("backgroundColor", "#83b09a");
+                    sessionStorage.setItem('distribution', JSON.stringify(distribution)); //存值 
+                    $('#buttons1').show()
+                    $('#buttons').show()
+                    $('.block').hide();
+                    $('#container').show();
+                    $('body').css("backgroundColor", "#f0f0f0")
+                    $('#button').hide()
+                    $('#receive').val("黑天" + (na + 1) + "号玩家死亡," + "身份是水民");
+
+                }
+            }
+        } else {
+            alert("该玩家已死亡")
+
+        }
+    }
+}
+
 
 
 $('#ghost').click(function () { //亡灵发言
@@ -236,9 +264,13 @@ $('#game').click(function () { //玩家发言
         $("#game").css("background-color", "#8cae9b");
     }
 })
+
 $('#vote').click(function () { //投票
     if (nm == 3) {
         nm = 4;
+        $('#num-days').eq(na).val("第" + large[0 + 1] + "天");
+        $(".bob").append(box);
+        $(".options").hide();
         $('.block').show();
         $('#container').hide();
         $('body').css("backgroundColor", "#29bde0")
@@ -246,6 +278,7 @@ $('#vote').click(function () { //投票
         $('#buttons').hide()
         $('#button').show()
         $('.texts').text("投票");
+        $(".combination").css("opacity", "1");
     } else {
         alert("请按顺序操作！")
     }
@@ -262,7 +295,6 @@ $('#vote').click(function () { //投票
 })
 
 
-
 function examine() { //法官查看
     if (ka == 2) {
         ka = 3;
@@ -272,6 +304,7 @@ function examine() { //法官查看
         $('.texts').text("法官日志");
         $('#buttons1').hide()
         $('#buttons').text("返回游戏")
+        $(".combination").css("opacity","0");
     } else if (ka = 3) {
         ka = 2;
         $('.block').hide();
@@ -282,16 +315,3 @@ function examine() { //法官查看
         $('body').css("backgroundColor", "#f0f0f0")
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
