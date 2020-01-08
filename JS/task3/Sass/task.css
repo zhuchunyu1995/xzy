@@ -1,6 +1,7 @@
 body {
   margin: 0;
   background: #29bde0;
+  padding-bottom: 24%;
 }
 
 .hot {
@@ -102,7 +103,7 @@ body {
   display: block;
 }
 
-.box .day {
+.day {
   width: 98%;
   margin: 5px auto;
   background-color: #fff;
@@ -111,10 +112,11 @@ body {
   line-height: 50px;
   font-size: 20px;
   color: #29bde0;
+  display: block;
   cursor: pointer;
 }
 
-.box .options {
+.options {
   width: 98%;
   margin: 0 auto;
   padding-bottom: 30px;
@@ -124,7 +126,7 @@ body {
   cursor: pointer;
 }
 
-.box .options .triangle-top {
+.options .triangle-top {
   border: 17px solid;
   border-color: transparent transparent #fff;
   position: absolute;
@@ -133,7 +135,7 @@ body {
   cursor: pointer;
 }
 
-.box .options .discuss {
+.options .discuss {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -143,17 +145,17 @@ body {
   cursor: pointer;
 }
 
-.box .options .discuss .sun {
+.options .discuss .sun {
   position: relative;
   cursor: pointer;
 }
 
-.box .options .discuss .sun img {
+.options .discuss .sun img {
   width: 40px;
   padding-right: 24px;
 }
 
-.box .options .discuss .sun .kkk {
+.options .discuss .sun .kkk {
   height: 45px;
   position: absolute;
   top: -36px;
@@ -161,7 +163,7 @@ body {
   border-right: 1px solid #999;
 }
 
-.box .options .discuss .block-s {
+.options .discuss .block-s {
   width: 70%;
   height: 40px;
   background: #24a7c6;
@@ -171,7 +173,7 @@ body {
   position: relative;
 }
 
-.box .options .discuss .block-s .triangle-left {
+.options .discuss .block-s .triangle-left {
   border-top: 20px solid transparent;
   border-bottom: 20px solid transparent;
   border-right: 40px solid #24a7c6;
@@ -196,6 +198,11 @@ body {
   outline: none;
   border: none;
   text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin-left: -40px;
 }
 
 .footer {
