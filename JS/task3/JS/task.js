@@ -3,6 +3,15 @@ var distribution = JSON.parse(sessionStorage.getItem('distribution')); //取值
 var specterNum = JSON.parse(sessionStorage.getItem('specterNum')); //取值
 var civilianNum = JSON.parse(sessionStorage.getItem('civilianNum')); //取值
 
+
+
+sessionStorage.setItem('specter', JSON.stringify(specterNum)); //存值
+sessionStorage.setItem('civilian', JSON.stringify(civilianNum)); //存值
+
+
+
+
+
 var container = document.getElementById('container');
 var buttons1 = document.getElementById('buttons1');
 var buttons = document.getElementById('buttons');
@@ -16,10 +25,10 @@ $(butt).hide()
 for (let i = 0; i < num.length; i++) { //循环出的方块
     var block = '<div class="block-1" id="boxes-1">' +
         '<div class="block-2">' +
-        '<div class="top" onclick="btn(' + i + ')" onmouseover="t1(this)" onmouseout="t2(this)">' +
+        '<div class="top" onclick="btn(' + i + ',this)" onmouseover="t1(this)" onmouseout="t2(this)">' +
         '<p>' + distribution[i].role + '</p>' +
         '</div>' +
-        '<div class="bottom">' +
+        '<div class="bottom"  >' +
         '<p>' + [i + 1] + '</p>' +
         '</div>' +
         '</div>' +
@@ -28,6 +37,7 @@ for (let i = 0; i < num.length; i++) { //循环出的方块
         '</div>' +
         '</div>';
     $("#boxes").append(block);
+
 }
 
 $(".combination").css("opacity", "0");
@@ -35,17 +45,11 @@ $(".combination").css("opacity", "0");
 
 
 
-
-var na; //接收数组下标    
-function btn(t) {
-    na = t;
-}
-
-
 var ka = 1; //判断数字是几执行什么操作
 buttons1.onclick = function () { //切换到法官台本页面 改变标题和页尾背景色
 
-    if (ka == 1) { //跳转到法官台本页面
+    if (ka == 1) { //跳转到法官台本页面 
+
         ka = 2;
         $('.block').hide();
         $(container).show();
@@ -99,8 +103,10 @@ function examine() { //法官查看
 
 var rr = 0; //方块变色
 var large = ["零", "一", "二", "三", "四", "五", "六", "七", "八", "九", "十"]; //进展天数
-var ff = 0; //天数变化
 
+var ff = 0; //天数变化
+var nice=0;
+nic=0;
 function adc() {
     ff++;
     var box = '<li>' +
@@ -111,18 +117,18 @@ function adc() {
         '<div class="sun">' +
         '<img src="./img/moon.png">' +
         '</div>' +
-        '<div class="block-s  idea"  onclick="dw()">' +
+        '<div class="block-s  idea" onclick="dw(' + ff + ')" >' +
         '<i class="triangle-left left-1">' + '</i>' +
         '杀手杀人' +
         '</div>' +
-        '<input type="text" id="receive" class="result" readonly="readonly">' +
+        '<input type="text" class="result" readonly="readonly">' +
         '</div>' +
         '<div class="discuss">' +
         '<div class="sun">' +
         '<img src="./img/moon.png">' +
         '<div class="kkk">' + '</div>' +
         '</div>' +
-        '<div class="block-s ghost" onclick="dwg()">' +
+        '<div class="block-s ghost" onclick="dwg(' + ff + ')">' +
         '<i class="triangle-left left-2">' + '</i>' +
         '亡灵发言' +
         '</div>' +
@@ -132,7 +138,7 @@ function adc() {
         '<img src="./img/sun.png">' +
         '<div class="kkk">' + '</div>' +
         '</div>' +
-        '<div class="block-s game" onclick="dws()">' +
+        '<div class="block-s game" onclick="dws(' + ff + ')">' +
         '<i class="triangle-left left-3">' + '</i>' +
         '玩家发言' +
         '</div>' +
@@ -142,7 +148,7 @@ function adc() {
         '<img src="./img/sun.png">' +
         '<div class="kkk">' + '</div>' +
         '</div>' +
-        '<div class="block-s vote"  onclick="dwa()">' +
+        '<div class="block-s vote"  onclick="dwa(' + ff + ')">' +
         '<i class="triangle-left left-4">' + '</i>' +
         '投票' +
         '</div>' +
@@ -152,48 +158,50 @@ function adc() {
     $(".bob").append(box);
     $(function () {
         $('span').click(function () { //手风琴
-            $(this).next().slideUp().parent().siblings().children().slideDown();
+            $(this).next().slideDown().parent().siblings().children('div').slideUp();
         })
     })
-
-
 }
+
+
 
 var nm = 0; //判断点击变色
 
-var nua = 1;
+function dw(a) { //杀人模块
+    if (ff == a) {
+        if (nm == 0) {
+            nm = 1;
+            rr = 1;
+            nice++;
+            sessionStorage.setItem('nice', JSON.stringify(nice)); //存值 
+            $('.block').show();
+            $('.texts').text("月黑风高杀人夜");
+            $(container).hide();
+            $('body').css("backgroundColor", "black");
+            $(buttons1).hide()
+            $(buttons).hide()
+            $(button).show()
+            $(".combination").css("opacity", "1");
+          
 
-function dw() { //杀人模块
-
-    if (nm == 0) {
-        nm = 1;
-        rr = 1;
-        $('.block').show();
-        $('.texts').text("月黑风高杀人夜");
-        $(container).hide();
-        $('body').css("backgroundColor", "black");
-        $(buttons1).hide()
-        $(buttons).hide()
-        $(button).show()
-        $(".combination").css("opacity", "1");
-
-    } else {
-        alert("请按顺序操作！")
-    }
-    if (nm > 0) {
-        $(".left-1").css({
-            "border-right": "40px solid  #8cae9b",
-            "border-top": "20px solid transparent",
-            "border-bottom": "20px solid transparent",
-            "position": "absolute",
-            "left": "-19px"
-        })
-        $('.idea').css("background-color", "#8cae9b");
+        } else {
+            alert("请按顺序操作！")
+        }
+        if (nm > 0) {
+            $(".left-1").css({
+                "border-right": "40px solid  #8cae9b",
+                "border-top": "20px solid transparent",
+                "border-bottom": "20px solid transparent",
+                "position": "absolute",
+                "left": "-19px"
+            })
+            $('.idea').css("background-color", "#8cae9b");
+        }
     }
 }
 
 
-
+var end=[];
 
 button.onclick = function () { //杀人之后确定按钮
     if (na == undefined) {
@@ -204,7 +212,6 @@ button.onclick = function () { //杀人之后确定按钮
                 if (nm == 1) {
                     alert("不能自相残杀")
                 }
-
             } else {
                 var m = confirm("确定要杀此人吗？"); //杀人  确定改变状态，取消 重新选取
                 if (m == true) {
@@ -220,12 +227,14 @@ button.onclick = function () { //杀人之后确定按钮
                     $(container).show();
                     $('body').css("backgroundColor", "#f0f0f0")
                     $(button).hide()
-                    $('#receive').val("黑天" + (na + 1) + "号玩家死亡," + "身份是水民");
-
+                    $('.result').eq(nic).val("黑天" + (na + 1) + "号玩家死亡," + "身份是水民");
+                   
+                    end.push(na+1);
+                    sessionStorage.setItem('end', JSON.stringify(end)); //存值
                     if (civilianNum <= specterNum) {
+                        alert("幽灵胜利")
                         window.location.href = "task-4-1.html";
                     }
-
                 }
             }
         } else {
@@ -235,91 +244,130 @@ button.onclick = function () { //杀人之后确定按钮
 }
 
 
+var na; //接收数组下标   
 
-
-function dwg() { //亡灵发言
-    if (nm == 1) {
-        nm = 2;
-        alert("月黑风高杀人夜");
-    } else {
-        alert("请按顺序操作！")
+function btn(t, x) {
+    na = t;
+    if (rr == 1 || rr == 3) {
+        if (distribution[na].survival === 0) {
+            x.style.backgroundColor = "#8cae9b";
+        }
     }
-    if (nm > 1) {
-        $(".left-2").css({
-            "border-right": "40px solid  #8cae9b",
-            "border-top": "20px solid transparent",
-            "border-bottom": "20px solid transparent",
-            "position": "absolute",
-            "left": "-19px"
-        })
-        $('.ghost').css("background-color", "#8cae9b");
+ 
+
+}
+
+function t1(x) { //杀人页面方块变色
+    //console.log(distribution[na])
+    console.log(x)
+}
+
+function t2(x) { //恢复颜色
+   
+    if (distribution[na].survival === 0) {
+        if (rr == 1 || rr == 3) {
+            x.style.backgroundColor = "#f5c97b";
+        }
     }
 }
 
 
-function dws() { //玩家发言
-    if (nm == 2) {
-        nm = 3;
-        alert("我坤坤绝不是凶手");
-    } else {
-        alert("请按顺序操作！")
+
+function dwg(a) { //亡灵发言
+    if (ff == a) {
+        if (nm == 1) {
+            nm = 2;
+            alert("月黑风高杀人夜");
+        } else {
+            alert("请按顺序操作！")
+        }
+        if (nm > 1) {
+            $(".left-2").css({
+                "border-right": "40px solid  #8cae9b",
+                "border-top": "20px solid transparent",
+                "border-bottom": "20px solid transparent",
+                "position": "absolute",
+                "left": "-19px"
+            })
+            $('.ghost').css("background-color", "#8cae9b");
+        }
     }
-    if (nm > 2) {
-        $(".left-3").css({
-            "border-right": "40px solid  #8cae9b",
-            "border-top": "20px solid transparent",
-            "border-bottom": "20px solid transparent",
-            "position": "absolute",
-            "left": "-19px"
-        })
-        $('.game').css("background-color", "#8cae9b");
+}
+
+function dws(a) { //玩家发言
+    if (ff == a) {
+        if (nm == 2) {
+            nm = 3;
+            alert("我坤坤绝不是凶手");
+        } else {
+            alert("请按顺序操作！")
+        }
+        if (nm > 2) {
+            $(".left-3").css({
+                "border-right": "40px solid  #8cae9b",
+                "border-top": "20px solid transparent",
+                "border-bottom": "20px solid transparent",
+                "position": "absolute",
+                "left": "-19px"
+            })
+            $('.game').css("background-color", "#8cae9b");
+
+        }
+    }
+}
+
+function dwa(a) { //投票
+    if (ff == a) {
+        if (nm == 3) {
+            rr = 3;
+            nm = 4;
+            $(".options").hide();
+            $('.block').show();
+            $(container).hide();
+            $('body').css("backgroundColor", "#29bde0")
+            $(buttons1).hide()
+            $(buttons).hide()
+            $(button).hide()
+            $(butt).show()
+            $('.texts').text("投票");
+            $(".combination").css("opacity", "1");
+
+        } else {
+            alert("请按顺序操作！")
+        }
+
+        if (nm > 3) {
+            $(".left-4").css({
+                "border-right": "40px solid  #8cae9b",
+                "border-top": "20px solid transparent",
+                "border-bottom": "20px solid transparent",
+                "position": "absolute",
+                "left": "-19px"
+            })
+            $('.vote').css("background-color", "#8cae9b");
+        }
 
     }
 }
-var ee = 1;
-
-function dwa() { //投票
-    if (nm == 3) {
-        rr = 3;
-        nm = 4;
-        $(".options").hide();
-        $('.block').show();
-        $(container).hide();
-        $('body').css("backgroundColor", "#29bde0")
-        $(buttons1).hide()
-        $(buttons).hide()
-        $(button).hide()
-        $(butt).show()
-        $('.texts').text("投票");
-        $(".combination").css("opacity", "1");
-
-    } else {
-        alert("请按顺序操作！")
-    }
-
-    if (nm > 3) {
-        $(".left-4").css({
-            "border-right": "40px solid  #8cae9b",
-            "border-top": "20px solid transparent",
-            "border-bottom": "20px solid transparent",
-            "position": "absolute",
-            "left": "-19px"
-        })
-        $('.vote').css("background-color", "#8cae9b");
-    }
-
-}
 
 
-
-butt.onclick = function () {
-
+var ens=[];
+var en=[];
+butt.onclick = function () { //投票确认按钮
     nm = 0;
-    adc()
+
     if (na == undefined) {
         alert("请选择玩家")
     } else {
+        
         if (distribution[na].survival === 0) {
+
+            ens.push(na+1);
+            sessionStorage.setItem('ens', JSON.stringify(ens)); //存值
+
+          
+
+
             if (distribution[na].role === "幽灵") {
                 var k = confirm("确定要杀此人吗？");
                 if (k == true) {
@@ -328,8 +376,15 @@ butt.onclick = function () {
                     specterNum--;
                     sessionStorage.setItem('specterNum', JSON.stringify(specterNum)); //存值 
                     $('.top').eq(na).css("backgroundColor", "#83b09a");
+
+                    en.push("幽灵");
+                    sessionStorage.setItem('en', JSON.stringify(en)); //存值
+
+
                     if (specterNum == 0) {
                         window.location.href = "task-4-1.html";
+                        alert("水民胜利")
+                      
                     } else {
                         $('.block').hide();
                         $(container).show();
@@ -339,7 +394,10 @@ butt.onclick = function () {
                         $(buttons).show()
                         $(button).hide()
                         $(butt).hide()
-
+                        adc()
+                        nic++
+                       
+                       
                     }
                 }
 
@@ -360,9 +418,18 @@ butt.onclick = function () {
                     $('body').css("backgroundColor", "#f0f0f0")
                     $(button).hide()
                     $('#receive').val("黑天" + (na + 1) + "号玩家死亡," + "身份是水民");
+                    en.push("水民");
+                    sessionStorage.setItem('en', JSON.stringify(en)); //存值
+
 
                     if (civilianNum <= specterNum) {
+                        alert("幽灵胜利")
+                        
                         window.location.href = "task-4-1.html";
+                    } else {
+                        adc()
+                        nic++
+
                     }
                 }
             }
@@ -372,22 +439,6 @@ butt.onclick = function () {
         }
     }
 
-
 }
 
 
-
-function t1(x) { //杀人页面方块变色
-    if (rr == 1 || rr == 3) {
-        x.style.backgroundColor = "#8cae9b";
-    }
-}
-
-
-
-
-function t2(x) { //恢复颜色
-    if (rr == 1 || rr == 3) {
-        x.style.backgroundColor = "#f5c97b";
-    }
-}

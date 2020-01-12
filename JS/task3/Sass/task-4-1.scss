@@ -1,7 +1,6 @@
 body {
-    margin: 0 auto;
-    min-width: 320px;
-    max-width: 768px;
+    margin: 0;
+  
 }
 $background:#29bde0;
 $color: #fff;
@@ -31,6 +30,12 @@ background: $background;
     display: flex;
     flex-direction: column;
     align-items: center;
+    .end {
+        position: absolute;
+        top: 148px;
+        font-size: 24px;
+        color: $color;
+    }
     >img {
         width: 250px;
         padding: 20px 0;
@@ -38,7 +43,7 @@ background: $background;
 
     > span {
         color: #ffc865;
-        font-size: 24px;
+        font-size: 20px;
         text-align: center;
         text-align-last: left;
     }
@@ -56,20 +61,18 @@ background: $background;
     padding-top: 50px;
     padding-bottom: 20px;
 
->.result-2 {
-    display: flex;
-    justify-content: space-between;
 
-    >.none {
+    .none {
         opacity: 0;
     }
-}
+
 }
 
 $color-1: #a6a6a6;
 
 
 .coat {
+  padding-bottom: 20%;
   border-bottom: 1px solid #ddd;
 }
 
@@ -84,9 +87,8 @@ $color-1: #a6a6a6;
     line-height: 24px;
     padding-bottom: 20px;
     .box-bottom-1 {
-        display: flex;
-        justify-content: space-between; 
-        align-items: center;
+        
+       
         padding-top: 10px;
         padding-bottom: 20px;
 
@@ -99,8 +101,6 @@ $color-1: #a6a6a6;
 
 .footer {
   position: fixed;
-  min-width: 320px;
-  max-width: 768px;
   width: 100%;
   bottom: 0;
   height: 100px;

@@ -1,7 +1,5 @@
 body {
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 768px;
+  margin: 0;
 }
 
 .box-top {
@@ -32,6 +30,13 @@ body {
   align-items: center;
 }
 
+.result .end {
+  position: absolute;
+  top: 148px;
+  font-size: 24px;
+  color: #fff;
+}
+
 .result > img {
   width: 250px;
   padding: 20px 0;
@@ -39,7 +44,7 @@ body {
 
 .result > span {
   color: #ffc865;
-  font-size: 24px;
+  font-size: 20px;
   text-align: center;
   text-align-last: left;
 }
@@ -56,16 +61,12 @@ body {
   padding-bottom: 20px;
 }
 
-.result-1 > .result-2 {
-  display: flex;
-  justify-content: space-between;
-}
-
-.result-1 > .result-2 > .none {
+.result-1 .none {
   opacity: 0;
 }
 
 .coat {
+  padding-bottom: 20%;
   border-bottom: 1px solid #ddd;
 }
 
@@ -81,9 +82,6 @@ body {
 }
 
 .box-bottom .box-bottom-1 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   padding-top: 10px;
   padding-bottom: 20px;
 }
@@ -95,8 +93,6 @@ body {
 
 .footer {
   position: fixed;
-  min-width: 320px;
-  max-width: 768px;
   width: 100%;
   bottom: 0;
   height: 100px;
