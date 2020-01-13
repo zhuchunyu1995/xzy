@@ -59,15 +59,10 @@
                 全局方法String() 可以将数字转换为字符串。<br>
                 该方法可用于任何类型的数字，字母，变量，表达式<br>
                 toString()也是有同样的效果，不能转Null，undefined两种类型 <br>
-                <img src="./img/1.png">
+              
             </p>
         </section>
-        <section section style="font-size: 23px;">
-            
-                <img src="./img/2.png">
-            
-         </section>
-
+    
 
 
      <section section style="font-size: 23px;">
@@ -103,17 +98,8 @@ undefined，null，NAN,""，0，false为false，其余全为true
 undefined等于undefined undefined等于null
 NaN不等于任何 甚至不等于另一个NaN
 除了上述类型有数字优先转数字
-都是对象保证引用同一对象，否则将对象转ToPrimitive（抽象操作）再对比
-在if中判断字符串和数组有没有值，要采用简写
-写成if(val)和if(arr.length)
-而不是if(val!=='')和if(arr.length>0)<br>
+都是对象保证引用同一对象，否则将对象转ToPrimitive（抽象操作）
 
-
-自动转换类型<br>
-5 + null    // 返回 5         null 转换为 0<br>
-"5" + null  // 返回"5null"   null 转换为 "null"<br>
-"5" + 1     // 返回 "51"      1 转换为 "1" <br>
-"5" - 1     // 返回 4         "5" 转换为 5<br>
     </p>
 </section>
 
@@ -126,8 +112,8 @@ NaN不等于任何 甚至不等于另一个NaN
         在 JS 中 null 表示 "什么都没有"。
         null是一个只有一个值的特殊类型。表示一个空对象引用。
         
-        用 typeof 检测 null 返回是object。
-        可以设置为 null 来清空对象:
+        检测 null 返回是object。<br>
+        可以设置 null 来清空对象:
         
         var person = null;
         <img src="./img/8.png"><br>
@@ -139,10 +125,10 @@ NaN不等于任何 甚至不等于另一个NaN
 
 <section section style="font-size: 23px;">
     <p style="text-align: left">
-        未定义（Undefined）
+        未定义
 
         Undefined类型也只有一个值，即undefined。当声明的变量还未被初始化时，变量的默认值为undefined。
-        typeof 一个没有值的变量会返回 undefined。
+        一个没有值的变量会返回 undefined。
         <img src="./img/10.png">
     </p>
 </section>
@@ -168,7 +154,7 @@ Symbol 数据类型的特点是唯一性，即使是用同一个变量生成的�
         <h3>引用数据类型：</h3>
 
         对象(Object)
-        对象分为键和值
+        分为键和值
         var name=
         {
         age : "53岁"；  age是键，53岁是值
