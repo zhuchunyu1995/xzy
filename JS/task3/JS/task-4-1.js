@@ -11,6 +11,24 @@ var en = JSON.parse(sessionStorage.getItem('en')); //取值
 var nice = JSON.parse(sessionStorage.getItem('nice')); //取值
 
 
+$(function() {
+    $(".ans").click(function() {
+        window.location.href="task-2-1.html";
+    });
+});
+
+$(function() {
+    $(".ank").click(function() {
+        var x;
+        var r = confirm("确定要退出本局游戏吗？");
+        if (r == true) {
+            x = window.location.href = "task-2-1.html";
+        }
+    });
+});
+
+
+
 if (specterNum == 0) {
     $('.end').text("水民胜利");
     $('.end1').text("恭喜你们战胜了幽灵！");
@@ -23,6 +41,10 @@ $('.ghost').text("幽灵" + specter + "人");
 
 $('.orLM').text("水民" + civilian + "人");
 
+
+$('.residue').text("幽灵剩余" + specterNum + "人");
+
+$('.residue1').text("水民剩余" + civilianNum + "人");
 
 
 for (let i = 0; i < nice; i++) {

@@ -16,6 +16,28 @@ var a = 1;
 var b = 1;
 var c = 0;
 
+
+
+
+
+$(function() {
+    $(".ans").click(function() {
+        window.location.href="task-2-1.html";
+    });
+});
+
+$(function() {
+    $(".ank").click(function() {
+        var x;
+        var r = confirm("确定要退出本局游戏吗？");
+        if (r == true) {
+            x = window.location.href = "task-2-1.html";
+        }
+    });
+});
+
+
+
 var start = "off";  //模拟开关 
 function btn() {          //切换按钮
     if (c < num.length) {   //c等于0 小于 num数组最大长度时执行下面操作

@@ -1,5 +1,9 @@
 
-
+$(function() {
+    $(".ans").click(function() {
+        window.location.href="task-2-1.html";
+    });
+});
 
 
 function group(value) {           //关联滑块和玩家数量，赋值并分配幽灵平民人数

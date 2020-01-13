@@ -20,6 +20,26 @@ $(button).hide()
 $(butt).hide()
 
 
+
+$(function() {
+    $(".ans").click(function() {
+        window.location.href="task-2-1.html";
+    });
+});
+
+$(function() {
+    $(".ank").click(function() {
+        var x;
+        var r = confirm("确定要退出本局游戏吗？");
+        if (r == true) {
+            x = window.location.href = "task-2-1.html";
+        }
+    });
+});
+
+
+
+
 for (let i = 0; i < num.length; i++) { //循环出的方块
     var block = '<div class="block-1" id="boxes-1">' +
         '<div class="block-2">' +
