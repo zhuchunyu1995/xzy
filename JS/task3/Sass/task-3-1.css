@@ -49,7 +49,7 @@ body {
   color: #f56b81;
 }
 
-.status > .content {
+.status .content {
   width: 72%;
   height: 400px;
   margin: 0 auto;
@@ -62,12 +62,12 @@ body {
   left: calc(50% - 36.5%);
 }
 
-.status > .content .photo {
+.status .content .photo {
   display: flex;
   justify-content: center;
 }
 
-.status > .content .photo img {
+.status .content .photo img {
   width: 160px;
 }
 
