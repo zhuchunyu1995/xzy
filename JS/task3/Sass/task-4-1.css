@@ -111,9 +111,16 @@ body {
   font-size: 26px;
   outline: none;
   margin: 0 10px;
-  -webkit-appearance: none;
 }
 
 .footer > .button-1 {
   background: #f66f6f;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+  -webkit-appearance: none;
+}
+
+textarea {
+  -webkit-appearance: none;
 }
