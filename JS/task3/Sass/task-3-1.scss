@@ -62,7 +62,6 @@ body {
             width: 72%;
             height: 400px;
             margin: 0 auto;
-            
             position: absolute;
             background: $background;
             border: 3px solid $color-f;
@@ -71,6 +70,13 @@ body {
             align-items: center;
             left: calc(50% - 36.5%);
            
+            .photo {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 70%;  
+                }  
+                }
         }
         >.button {
             width: 70%;
@@ -104,18 +110,12 @@ body {
 
 
 
-.logos {
-    width: 160px; 
-    object-fit: cover;
-} 
-
 
 
 
 .contents {
     width: 72%;
     height: 400px;
-    
     margin-left: calc(50% - 36.5%);
     background: $background;
     border: 3px solid $color-f;

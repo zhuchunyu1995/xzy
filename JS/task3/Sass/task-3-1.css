@@ -62,6 +62,15 @@ body {
   left: calc(50% - 36.5%);
 }
 
+.status .content .photo {
+  display: flex;
+  justify-content: center;
+}
+
+.status .content .photo img {
+  width: 70%;
+}
+
 .status > .button {
   width: 70%;
   position: fixed;
@@ -91,11 +100,6 @@ body {
 
 .status > .button input::-webkit-input-placeholder {
   color: #fff;
-}
-
-.logos {
-  width: 160px;
-  object-fit: cover;
 }
 
 .contents {
