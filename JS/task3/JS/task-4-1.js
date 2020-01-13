@@ -16,7 +16,7 @@ if (specterNum == 0) {
     $('.end1').text("恭喜你们战胜了幽灵！");
 }else {
     $('.end').text("幽灵胜利");
-    $('.end1').text("太棒了！你知道么？在捉鬼游戏中只有20%的卧底取得游戏最终的胜利哦！");
+    $('.end1').text("太棒了！你知道么？在捉鬼游戏中只有20%的幽灵取得游戏最终的胜利哦！");
 }
 
 $('.a1').text("幽灵"+specter+"人");
@@ -37,7 +37,7 @@ var ko='<div class="box-bottom">'+
 $(".coat").append(ko);
    
 if(en[i]!== undefined) {
-$('.b2').eq(i).text("白天"+ens[i]+"号玩家被投死,死者身份是"+en[i]);
+$('.b2').eq(i).text("白天"+ens[i]+"号玩家被投死,  死者身份是"+en[i]);
 }
 
 }

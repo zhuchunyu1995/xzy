@@ -99,10 +99,6 @@ body {
   display: none;
 }
 
-.block-1:hover .combination {
-  display: block;
-}
-
 .day {
   width: 98%;
   margin: 5px auto;
