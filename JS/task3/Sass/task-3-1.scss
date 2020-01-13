@@ -55,11 +55,13 @@ body {
         input {
             width: 78%;
             height: 65%;
+            margin-left: -3px;
             font-size: 34px;
             text-align: center;
             border: none;
             outline: none;
             color: #f56b81;
+            border-radius: 100%;
         }
         input::-webkit-input-placeholder{
             color: #f56b81;

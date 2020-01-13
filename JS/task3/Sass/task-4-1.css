@@ -66,8 +66,8 @@ body {
 }
 
 .coat {
-  padding-bottom: 20%;
-  border-bottom: 1px solid #ddd;
+  padding-bottom: 30%;
+  line-height: 30px;
 }
 
 .box-bottom {
@@ -77,8 +77,6 @@ body {
   flex-direction: column;
   color: #a6a6a6;
   font-size: 17px;
-  line-height: 24px;
-  padding-bottom: 20px;
 }
 
 .box-bottom .box-bottom-1 {
