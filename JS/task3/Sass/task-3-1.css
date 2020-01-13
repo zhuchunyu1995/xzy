@@ -50,7 +50,6 @@ body {
 .status > .number input {
   width: 78%;
   height: 65%;
-  margin-left: -3px;
   font-size: 34px;
   text-align: center;
   border: none;
