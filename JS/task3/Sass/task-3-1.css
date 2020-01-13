@@ -67,10 +67,6 @@ body {
   justify-content: center;
 }
 
-.status .content .photo img {
-  width: 160px;
-}
-
 .status > .button {
   width: 70%;
   position: fixed;
@@ -100,6 +96,10 @@ body {
 
 .status > .button input::-webkit-input-placeholder {
   color: #fff;
+}
+
+.logos {
+  width: 160px;
 }
 
 .contents {

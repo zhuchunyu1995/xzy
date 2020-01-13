@@ -74,9 +74,7 @@ body {
             .photo {
                 display: flex;
                 justify-content: center;
-                img {
-                    width: 160px;  
-                }  
+                
                 }
         }
         >.button {
@@ -111,7 +109,9 @@ body {
 
 
 
-
+.logos {
+    width: 160px;  
+} 
 
 
 
