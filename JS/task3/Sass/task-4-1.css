@@ -111,6 +111,7 @@ body {
   font-size: 26px;
   outline: none;
   margin: 0 10px;
+  -webkit-appearance: none;
 }
 
 .footer > .button-1 {
