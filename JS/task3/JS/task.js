@@ -116,7 +116,7 @@ nic = 0; //死亡状态的下标 循环加
 function page() {
     day++;
     var box = '<li>' +
-        '<span  class="day">' + '第' + large[day] + '天' + '</span>' +
+        '<label  class="day">' + '第' + large[day] + '天' + '</label>' +
         '<div class="options">' +
         '<i class="triangle-top">' + '</i>' +
         '<div class="discuss">' +
@@ -163,10 +163,11 @@ function page() {
         '</li>';
     $(".bob").append(box);
     $(function () {
-        $('span').click(function () { //手风琴
-            $(this).next().slideDown().parent().siblings().children('div').slideUp();
-        })
-    })
+        $("li").eq(nic).on("click", "label", function() {
+          $(this).toggleClass('da').next('.options').slideToggle();
+
+        });
+      });
 }
 
 
