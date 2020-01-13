@@ -47,7 +47,9 @@ function btn() {          //切换按钮
             window.location.href = "task.html";  //跳转到法官页面显示身份
         })
     }
-    $('#number').val(a);    //赋值
+
+
+    $('.numb').text(a);    //赋值
     $('#examine').val("查看" + a + "号身份");   //赋值
     $(identity).val(distribution[c].role);    //数组下标在b按钮时自增
 }

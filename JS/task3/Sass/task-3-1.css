@@ -32,7 +32,7 @@ body {
   margin-top: 90px;
 }
 
-.status > .number {
+.status .number {
   width: 50px;
   height: 50px;
   position: absolute;
@@ -45,20 +45,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 999;
-}
-
-.status > .number input {
-  width: 78%;
-  height: 65%;
-  font-size: 34px;
-  text-align: center;
-  border: none;
-  outline: none;
-  color: #f56b81;
-  border-radius: 100%;
-}
-
-.status > .number input::-webkit-input-placeholder {
+  font-size: 20px;
   color: #f56b81;
 }
 
