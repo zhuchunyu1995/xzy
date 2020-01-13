@@ -62,11 +62,6 @@ body {
   left: calc(50% - 36.5%);
 }
 
-.status .content .photo {
-  display: flex;
-  justify-content: center;
-}
-
 .status > .button {
   width: 70%;
   position: fixed;
