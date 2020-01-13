@@ -235,8 +235,9 @@ button.onclick = function () { //杀人之后确定按钮
                     }
                 
                     if (civilianNum <= specterNum) {
-                        alert("幽灵胜利")
                         window.location.href = "task-4-1.html";
+                        alert("幽灵胜利")
+                       
                     }
                 }
             }
@@ -425,9 +426,9 @@ butt.onclick = function () { //投票确认按钮
                   
 
                     if (civilianNum <= specterNum) {
-                        alert("幽灵胜利")
-
                         window.location.href = "task-4-1.html";
+                        alert("幽灵胜利")
+                      
                     } else {
                         page()
                         nic++
