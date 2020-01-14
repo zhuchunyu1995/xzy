@@ -53,12 +53,10 @@
         </section>
         <section style="font-size: 23px;">
                 <h3>JS基本类型</h3>
-            <p style="text-align: left">
+            <p>
                
                 字符串可以是单引号或双引号中的任意文本。
-                全局方法String() 可以将数字转换为字符串。<br>
-                该方法可用于任何类型的数字，字母，变量，表达式<br>
-                toString()也是有同样的效果，不能转Null，undefined两种类型 <br>
+                
               
             </p>
         </section>
@@ -67,71 +65,60 @@
 
      <section section style="font-size: 23px;">
         <p style="text-align: left">
-            数字(Number)
-            全局方法 Number(),转换成数字
+            数字(Number)<br>
+            全局方法 Number() 转换成数字
             <img src="./img/5.png">
         </p>
  </section>
 
 <section section style="font-size: 23px;">
     <p style="text-align: left">
-        布尔只有两个值：true、false。
+        布尔只有两个值：true、false。<br>
 undefined，null，NAN,""，0，false为false，其余全为true
-空数组是true，对象也是true，一般用空数组length判断数组有没有数据
+空数组是true，对象也是true。
     </p>
 </section>
 
 <section section style="font-size: 23px;">
     <p style="text-align: left">
-        写法规范
-在js中写布尔和判断相关的代码时，都会要求遵循一定的编码规范：
+      
+在js中写布尔和判断相关的代码时，都会要求遵循一定的编码规范：<br><br>
 
-用绝对等于===判断来代替等于==，能用绝对等于的地方永远用绝对等于而不要用等于==
-因为绝对等于===会先判断数据类型，数据类型不同直接返回false
-而等于==会先进行数据转换
-同理推荐使用不绝对等于!==而不是不等于!=
-例如
- console.log('0'==0);//true
-  console.log('0'===0);//false
+用绝对等于===判断来代替等于==<br>
+能用绝对等于的地方永远用绝对等于而不要用等于==<br>
+因为绝对等于===会先判断数据类型，数据类型不同直接返回false<br>
+而等于==会先进行数据转换<br>
+同理推荐使用不绝对等于!==而不是不等于!=<br><br>
+例如<br>
+ console.log('0'==0);//true<br>
+  console.log('0'===0);//false<br><br>
 
-基本上就是
-undefined等于undefined undefined等于null
-NaN不等于任何 甚至不等于另一个NaN
-除了上述类型有数字优先转数字
-都是对象保证引用同一对象，否则将对象转ToPrimitive（抽象操作）
-
-    </p>
-</section>
+基本上就是<br>
+undefined等于undefined undefined等于null<br>
+NaN不等于任何 甚至不等于另一个NaN<br>
 
 
-<section section style="font-size: 23px;">
-    <p style="text-align: left">
-        对空（Null）
-
-        Null类型只有一个值，即null。null用来表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。
-        在 JS 中 null 表示 "什么都没有"。
-        null是一个只有一个值的特殊类型。表示一个空对象引用。
-        
-        检测 null 返回是object。<br>
-        可以设置 null 来清空对象:
-        
-        var person = null;
-        <img src="./img/8.png"><br>
-        var person = undefined; 变量可以通过设置 undefined 来清空。
-        <img src="./img/9.png">
     </p>
 </section>
 
 
 <section section style="font-size: 23px;">
     <p style="text-align: left">
+        空
+         类型只有一个值null。表示尚未存在的对象，常用来表示函数企图返回一个不存在的对象。
+         在 JS 中 null 表示 "什么都没有"。
+         null是一个只有一个值的特殊类型。表示一个空对象引用。
+        <br><br>
+
         未定义
 
-        Undefined类型也只有一个值，即undefined。当声明的变量还未被初始化时，变量的默认值为undefined。
+        Undefined类型也只有一个值，当声明的变量还未被初始化时，变量的默认值为undefined。
         一个没有值的变量会返回 undefined。
-        <img src="./img/10.png">
     </p>
 </section>
+
+
+
 
 
 <section section style="font-size: 23px;">
@@ -139,7 +126,7 @@ NaN不等于任何 甚至不等于另一个NaN
         Symbol 
 生成一个全局唯一的值。
 
-Symbol 数据类型的特点是唯一性，即使是用同一个变量生成的值也不相等。
+特点是唯一性，即使是用同一个变量生成的值也不相等。
 
     </p>
     <img src="./img/11.png">
@@ -148,24 +135,22 @@ Symbol 数据类型的特点是唯一性，即使是用同一个变量生成的�
 
 
 
-<section section style="font-size: 23px;">
-    <p style="text-align: left">
+<section section style="font-size: 23px;text-align: left;">
+   
  
         <h3>引用数据类型：</h3>
 
         对象(Object)
-        分为键和值
+        分为键和值<br>
         var name=
         {
-        age : "53岁"；  age是键，53岁是值
+        one : "53岁"；  one是键，53岁是值
         
-        可以在对象里设置函数，引用函数需要加（），不加引用函数表达式，对象是全局属性
-        }
-        
-        数组
-        数组下标是基于零的，所以第一个是 [0]，第二个是 [1]，以此类推。可以用for循环获取下标
-    </p>
-    <img src="./img/12.png">
+        }<br>
+        可以在对象里设置函数，引用函数需要加（），不加引用函数表达式，对象是全局属性<br><br>
+        数组<br>
+        数组下标是基于零的，所以第一个是 [0]，第二个 [1]，以此类推。可以用for循环获取下标
+   
   
 </section>
 
@@ -176,45 +161,43 @@ Symbol 数据类型的特点是唯一性，即使是用同一个变量生成的�
 
     <h3>函数</h3>
 
-     声明一个函数 function one() {
-         alert("你好")
+     声明一个函数 function one() {<br>
+        //函数执行代码<br>
      }
-引用方式 one()  <br>
-匿名函数自执行
-   (function() {
-    alert("你好")
-})();<br>
-匿名函数放在变量中
-    var one=function() {
-    alert("你好")
+引用方式 one()  <br><br>
+匿名函数自执行<br>
+   (function() {<br>
+    //函数执行代码 <br>
+})(); 打开网页自动执行<br><br>
+匿名函数放在变量中<br>
+    var one=function() {<br>
+        //函数执行代码<br>
 }
-调用one()<br>
-函数放在数组中 var one=[]; one[0]=function() {alert("你好")} 调用one[0]()<br>
-嵌套函数:内层函数没办法接收到外面的传参，可以接收函数内的   外层函数不受这个限制
-<img src="./img/20.png">
+调用one()<br><br>
+函数放在数组中<br> var one=[]; <br>one[0]=function() {<br>//函数执行代码} 调用one[0]()<br><br>
+函数在事件调用时不要写括号，比如one(),要这么写one
+
 
 </section>
 
 <section section style="font-size: 21px;text-align: left">
-函数传参
-function one(形参1,形参2){
-    //函数执行代码
-}
- 
+函数传参<br>
+function one(形参1,形参2){<br>
+    //函数执行代码<br>
+}<br>
 one(实参1,实参2);//调用时传参<br>
-函数返回值即函数执行之后的返回结果。<br>
-所有函数都会有函数返回值即函数执行后一定会返回一个结果，如果没有定义默认返回undefined；
-在函数中，return后定义返回值；
-在函数中，return之后的代码就不会再执行了
-return只能用于函数中，用在其他地方会报错 <br>
-
-函数在事件调用时不要写括号，比如one(),要这么写one
-
-
-
+<img src="./img/10.png">
 
 
 </section>
+
+<section section style="font-size: 21px;text-align: left">
+    函数返回值即函数执行之后的返回结果。<br>
+    所有函数都会有函数返回值,函数执行后一定会返回一个结果，如果没有定义默认返回undefined；
+    在函数中，return后定义返回值；return之后的代码就不会再执行了,只能用于函数中，用在其他地方会报错 <br>
+    <img src="./img/19.png">
+    </section>
+
         <section>
             <h3>2.知识剖析</h3>
         </section>
@@ -231,7 +214,7 @@ return只能用于函数中，用在其他地方会报错 <br>
 
         <section style="font-size: 24px;text-align: left;">
          <p>栈内存中的变量一般都是已知大小或者有范围上限的，算作一种简单存储。
-         而堆内存主要负责像对象Object这种变量类型的存储，堆内存存储的对象类型数据对于大小这方面，一般都是未知的，（所以这大概也是为什么null作为一个object类型的变量却存储在栈内存中的原因）。</p>
+         而堆内存主要负责像对象Object这种变量类型的存储，堆内存存储的对象类型数据对于大小这方面，一般都是未知的。</p>
         </section>
 
 
@@ -245,16 +228,17 @@ return只能用于函数中，用在其他地方会报错 <br>
         </section>
         <section style="font-size: 24px;text-align: left;">
 
-            new关键字生成的对象都是存在于堆内存中的
+            new关键字生成的对象都是存在于堆内存中的,
 
-            var a = new String('桔子桑')；变量 a 存在于栈内存中，他的值是一个指针，这个指针指向堆内存中的一个对象！
+           变量 a 存在于栈内存中，他的值是一个指针，这个指针指向堆内存中的一个对象！
+      
             <img src="./img/15.png">
             </section>
 
             <section style="font-size: 24px;text-align: left;">
-
-                普通变量的值类型是基本数据类型，指向栈内存中的一块地址；
                 引用类型变量的值是指针，指向堆内存中的一块地址。
+              
+               
                 <img src="./img/16.png">
             </section>
 
@@ -270,14 +254,12 @@ return只能用于函数中，用在其他地方会报错 <br>
 
 
             <section style="font-size: 24px;text-align: left;">
-                下面这个例子，a在栈内存，b等于a，b复制了一份a的数组，在同一个栈内，所以修改b，a也会根据地址回到a堆中修改<br>
-
-                c直接在栈中修改，不能指向a堆内存中。<br>
+                
                 
                 
                  var a = [1,2,3,4,5];<br>
-                    var b = a;//传址 ,对象中传给变量的数据是引用类型的，会存储在堆中；<br>
-                    var c = a[0];//传值，把对象中的属性/数组中的数组项赋值给变量，这时变量C是基本数据类型，存储在栈内存中；改变栈中的数据不会影响堆中的数据<br>
+                    var b = a;//传给变量的数据是引用类型的，会存储在堆中；<br>
+                    var c = a[0];//把对象中的属性/数组中的数组项赋值给变量，这时变量C是基本数据类型，存储在栈内存中；改变栈中的数据不会影响堆中的数据<br>
                     console.log(b);//1,2,3,4,5<br>
                     console.log(c);//1<br>
                     //改变数值 <br>
@@ -285,6 +267,8 @@ return只能用于函数中，用在其他地方会报错 <br>
                     c = 7;<br>
                     console.log(a[4]);//6<br>
                     console.log(a[0]);//1<br>
+                a在栈内存，b等于a，b复制了一份a的数组，在同一个栈内，所以修改b，a也会根据地址回到a堆中修改<br>
+                c直接在栈中修改，不能指向a堆内存中。<br>
             </section>
 
 
