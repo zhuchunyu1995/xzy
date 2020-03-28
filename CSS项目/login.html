@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="stylesheet" href="./CSS/login.css">
+</head>
+
+<body>
+    <!-- 最外层盒子 -->
+    <div class="container">
+        <!-- 登录页面 -->
+        <div class="login">
+            <!-- 切换状态区域 -->
+            <div class="status-bar">
+                <!-- 短信登录注册 -->
+                <div class="enroll choose">
+                    短信登录/注册
+                </div>
+                <!-- 密码登录 -->
+                <div class="enter ">
+                    密码登录
+                </div>
+            </div>
+            <!-- 注册区域 -->
+            <form class="form">
+                <div class="form-item">
+                    <span>请仔细阅读</span><a href="">豆瓣使用协议、隐私政策</a>
+
+                </div>
+
+                <div class="form-item">
+                    <input type="text" placeholder="手机号" class="move">
+
+                    <!-- 选择所在地区 -->
+                    <div class="choose-area">
+                        <div class="area-number">
+                            +86
+                        </div>
+
+                        <div class="visual">
+                            <div class="choose-list">
+                                <div class="list-title">
+                                    <h2 class="title iconfont iconguanbi">选择国际区号</h2>
+                                </div>
+
+                                <ul class="area">
+                                    <li><span class="left confirm aa">中国大陆</span>
+                                        <i class="left iconfont iconduihao confirm"></i>
+                                        <span class="right confirm">+86</span>
+                                    </li>
+                                    <li><span class="left">中国香港</span><span class="right">+852</span></li>
+                                    <li><span class="left">中国澳门</span><span class="right">+853</span></li>
+                                    <li><span class="left">中国台湾</span><span class="right">+886</span></li>
+                                    <li><span class="left">日本</span><span class="right">+81</span></li>
+                                    <li><span class="left">韩国</span><span class="right">+82</span></li>
+                                    <li><span class="left">新加坡</span><span class="right">+65</span></li>
+                                    <li><span class="left">泰国</span><span class="right">+66</span></li>
+                                    <li><span class="left">马来西亚</span><span class="right">+60</span></li>
+                                    <li><span class="left">美国</span><span class="right">+1</span></li>
+                                    <li><span class="left">加拿大</span><span class="right">+1</span></li>
+                                    <li><span class="left">澳大利亚</span><span class="right">+61</span></li>
+                                    <li><span class="left">英国</span><span class="right">+44</span></li>
+                                    <li><span class="left">德国</span><span class="right">+40</span></li>
+                                    <li><span class="left">法国</span><span class="right">+33</span></li>
+                                    <li><span class="left">俄罗斯</span><span class="right">+7</span></li>
+                                    <li><span class="left">印度</span><span class="right">+91</span></li>
+                                    <li><span class="left">新西兰</span><span class="right">+64</span></li>
+                                    <li><span class="left">意大利</span><span class="right">+39</span></li>
+                                    <li><span class="left">荷兰</span><span class="right">+31</span></li>
+                                    <li><span class="left">西班牙</span><span class="right">+34</span></li>
+                                    <li><span class="left">瑞典</span><span class="right">+46</span></li>
+                                    <li><span class="left">奥地利</span><span class="right">+43</span></li>
+                                    <li><span class="left">瑞士</span><span class="right">+41</span></li>
+                                    <li><span class="left">菲律宾</span><span class="right">+613</span></li>
+                                    <li><span class="left">印地尼西亚</span><span class="right">+62</span></li>
+                                    <li><span class="left">越南</span><span class="right">+84</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-item">
+                    <input type="password" placeholder="验证码">
+                    <a href="" class="obtain">获取验证码</a>
+                </div>
+
+                <div class="form-item">
+                    <button type="submit" class="btn">登录豆瓣</button>
+                </div>
+
+                <div class="form-item clearfix">
+                    <label>
+                        <input type="checkbox">
+                        <span>下次自动登录</span>
+                    </label>
+                    <a href="" class="right">收不到验证码</a>
+                </div>
+            </form>
+            <!-- 账号密码登录 -->
+
+            <form class="form hidden">
+                <div class="form-item clearfix">
+                    <a href="" class="right">找回密码</a>
+                </div>
+                <div class="form-item clearfix">
+                    <input type="text" placeholder="手机号/邮箱">
+                </div>
+                <div class="form-item clearfix">
+                    <input type="password" placeholder="密码">
+                </div>
+                <div disabled class="form-item">
+                    <button disabled type="submit" class="btn">登录豆瓣</button>
+                </div>
+                <div class="form-item clearfix">
+                    <label>
+                        <input type="checkbox">
+                        <span>下次自动登录</span>
+                    </label>
+                    <a href="" class="right">海外手机登录</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="else">
+            <span>第三方登录:</span>
+            <div class="icon">
+                <i class="iconfont iconweixin"></i>
+                <i class="iconfont iconxinlangweibo"></i>
+            </div>
+        </div>
+
+        <div class="qrcode hidden">
+            <div class="title">
+                <h2>二维码登录</h2>
+            </div>
+            <div class="qrcode-img">
+                <img src="./img/qrcode.png" alt="">
+            </div>
+            <div class="hint">
+                <span>请打开豆瓣客户端扫一扫</span>
+            </div>
+        </div>
+    
+
+    <div class="switch">
+        <!-- <i class="icon-on"></i> -->
+        <i class="icon-off"></i>
+    </div>
+
+    <div class="tip">
+        <span>扫码登录</span>
+    </div>
+    </div>
+</body>
+
+</html>
