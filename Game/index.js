@@ -5,7 +5,7 @@ var gameConfig = {
     rows: 3,
     cols: 3,
     isOver:false, //游戏是否结束
-    imgurl: "/img/lol.png",
+    imgurl: "./img/lol.png",
     dom: document.getElementById("game"),
 }
 //游戏小块的大小
