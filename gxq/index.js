@@ -1,10 +1,10 @@
 //游戏配置
 var gameConfig = {
-    width: 300,
-    height: 479,
+    width: 400,
+    height: 300,
     rows: 3,
     cols: 3,
-    imgurl: "./img/gxq.png",
+    imgurl: "./img/gxq.jpg",
     dom: document.getElementById("game"),
     isOver: false,
     begin: document.getElementById("begin"), //重新随机
