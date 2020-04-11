@@ -1,10 +1,10 @@
 //游戏配置
 var gameConfig = {
-    width: 500,
-    height: 500,
+    width: 550,
+    height: 456,
     rows: 3,
     cols: 3,
-    imgurl: "./img/lol.png",
+    imgurl: "./img/Huskie.jpg",
     dom: document.getElementById("game"),
     isOver: false,
     begin: document.getElementById("begin"), //重新随机
@@ -155,7 +155,7 @@ function initGame() {
                 if (i === gameConfig.rows - 1 && j === gameConfig.cols - 1) {
                     isVisible = false;
                 }
-                var b = new Block(i * gameConfig.pieceHeight, j * gameConfig.pieceWidth, isVisible)
+                var b = new Block(j * gameConfig.pieceWidth, i * gameConfig.pieceHeight, isVisible)
                 blocks.push(b)
             }
         }
