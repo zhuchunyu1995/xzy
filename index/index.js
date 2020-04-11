@@ -1,7 +1,7 @@
 //游戏配置
 var gameConfig = {
-    width: 550,
-    height: 456,
+    width: 370,
+    height: 307,
     rows: 3,
     cols: 3,
     imgurl: "./img/Huskie.jpg",
