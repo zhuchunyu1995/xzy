@@ -11,7 +11,6 @@ function stochastic() {
   for (i = 0; i < price; i++) {
     nothing[i] = i;
   }
-
   var nothings = []; //随机抽3个格子
   for (i = 0; i < 3; i++) {
     ran = Math.floor(Math.random() * (nothing.length - i));
@@ -19,7 +18,6 @@ function stochastic() {
     nothing[ran] = nothing[nothing.length - i - 1];
     console.log(nothings);
   }
-  var to=col();
   block[nothings[0]].style.background = col()[0];
   block[nothings[1]].style.background = col()[1];
   block[nothings[2]].style.background = col()[2];

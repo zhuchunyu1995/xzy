@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+  
+}
+$background:#29bde0;
+$color: #fff;
+
+.box-top {
+background: $background;
+}
+
+.header {
+    width: 96%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+    border-bottom: 1px solid #74d4eb;
+    color: $color;
+    font-size: 20px;
+
+    >img {
+        width: 30px;
+    }
+}
+.result {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .end {
+        position: absolute;
+        top: 148px;
+        font-size: 24px;
+        color: $color;
+    }
+    >img {
+        width: 250px;
+        padding: 20px 0;
+    }
+
+    > span {
+        color: #ffc865;
+        font-size: 20px;
+        text-align: center;
+        text-align-last: left;
+    }
+
+
+}
+.result-1 {
+    width: 80%;
+    font-size: 18px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 28px;
+    color: $color;
+    padding-top: 50px;
+    padding-bottom: 20px;
+
+
+    .none {
+        opacity: 0;
+    }
+
+}
+
+$color-1: #a6a6a6;
+
+
+.coat {
+  padding-bottom: 30%;
+  line-height: 30px;
+}
+
+
+.box-bottom {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    color: $color-1;
+    font-size: 17px;
+    .box-bottom-1 {
+        
+       
+        padding-top: 10px;
+        padding-bottom: 20px;
+
+        >.black {
+            color: black;
+            font-size: 20px;
+        }
+    }
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  background: $background;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:rgba(103, 199, 243, 0.5);
+
+  >.button-1,.button-2 {
+      background: #fbb435;
+      border: 0;
+      color: $color;
+      width: 45%;
+      height: 70px;
+      border-radius: 10px;
+      font-size: 26px;
+      outline: none;
+      margin: 0 10px;
+  }
+  >.button-1 {
+      background: #f66f6f;
+  }
+  
+  
+}
+input[type="button"], input[type="submit"], input[type="reset"] {
+    -webkit-appearance: none;
+    }
+    textarea { -webkit-appearance: none;}
